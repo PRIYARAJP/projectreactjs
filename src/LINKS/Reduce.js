@@ -19,7 +19,7 @@ function Routerof() {
 
        <BrowserRouter>
     <Routes>
-    <Route path='/mainproject'element={<Home />}/>
+    <Route path='/projectreactjs'element={<Home />}/>
       <Route path='/'element={<Home />}/>
       <Route path='/Bollywood'element={<Bollywood />}/> 
       <Route path='/Technology'element={<Technology />}/> 

@@ -38,7 +38,7 @@ class Home extends Component{
             Techa: '/ August 21 2017',
           };
           
-        return <><h1 >
+        return <><h1  >
             <Nav/>
           
 {/*           
@@ -52,8 +52,9 @@ class Home extends Component{
         }}
         
       ></img> */}
-
+<div className="homepg">
             <div className="homepageone">
+
             <div className="istimg">
 
                 <p className="cont">Title of vertical gallery
@@ -330,7 +331,7 @@ class Home extends Component{
 
 </div>
 <Link to ='/Bollywood'>
-<p className="updates"> VIEW MORE  
+<p className="updatesinggggg"> VIEW MORE  
 <img
 
         src={icon.forward}
@@ -345,7 +346,7 @@ class Home extends Component{
       ></img>  </p>   </Link><br/>
 
 </nav>
-            
+</div>
            </h1></>
           
          

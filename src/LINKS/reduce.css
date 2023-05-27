@@ -36,7 +36,13 @@ i{
   color: rgb(127, 122, 122);
   font-size: 0%;
 }
-
+.updatesinggggg{
+  color: black;
+  font-size: 25px;
+  text-decoration: underline white;
+  position: relative;
+  
+}
 .istimg{
 
 /* background-image: url(./wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass.jpg); */
@@ -195,8 +201,7 @@ width: 844px;
 .homepageone{
   display: flex;
   flex-wrap: wrap;
- 
- 
+
 }
 .avatars{
 display: flex;
@@ -277,7 +282,18 @@ background-image:url(./Screenshot\ 2020-08-10\ at\ 4.31.07\ PM.png);
 
 
 @media only screen and (max-width:460px){
-  .aa1{
+  .updatesinggggg{
+    color: black;
+    font-size: 25px;
+    text-decoration: underline white;
+    
+
+  }
+  .updatesinger{
+    position: relative;
+    bottom: -650px;
+  }
+  .aa1{ 
     display: flex;
     font-size: 20px;
   }
@@ -447,4 +463,9 @@ background-image:url(./Screenshot\ 2020-08-10\ at\ 4.31.07\ PM.png);
       background-size: cover;
        background-image:url(./Mask\ Group\ 21@2x.png);
     }
+    .homepg{
+ 
+      height: 1000cm;
+    }
+   
 }

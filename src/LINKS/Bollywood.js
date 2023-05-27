@@ -38,7 +38,7 @@ class Bollywood extends Component{
           };
         return <><h1 >
  <Nav/>
-
+ <div className="homepg">
  <nav className="formorgin">
         
            
@@ -249,8 +249,8 @@ class Bollywood extends Component{
 
 </div>
 <Link to ='/Technology'>
-<p  className="updates">
-  
+<p  className="updatesinggggg">
+<p  className="updatesinger"> 
 <img
 
         src={icon.down}
@@ -263,10 +263,11 @@ class Bollywood extends Component{
             height: icon.imageSizewidth,
         }}
         
-      ></img>  VIEW MORE  </p></Link></nav>
+      ></img>  VIEW MORE </p> </p></Link></nav>
+           </div>    
            </h1></>
           
-         
+
         
     }
 
