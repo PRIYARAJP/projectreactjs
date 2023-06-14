@@ -78,10 +78,10 @@ const ContextApi = (props) => {
       // {id:5, cat:"technology", img:"https://community.thriveglobal.com/wp-content/uploads/2020/07/Modren-Tech.jpg", heading:"technology"},
       // {id:6, cat:"fitness", img:"https://images.pexels.com/photos/1547248/pexels-photo-1547248.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", heading:"fitness"},
      
-      {id:8, cat:"new", img:"https://images.pexels.com/photos/16128579/pexels-photo-16128579/free-photo-of-landscape-of-a-river-and-mountains.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", heading:"NEW"},
-      {id:9, cat:"newtophollywood", img:"https://letsdownloadgame.com/wp-content/uploads/2019/12/Download-marvels-avengers-game-apk-for-android-free.jpg", heading:"NEW"},
+      {id:8, cat:"new", img:"https://images.pexels.com/photos/16128579/pexels-photo-16128579/free-photo-of-landscape-of-a-river-and-mountains.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", heading:"NEW MENU"},
+      {id:9, cat:"newtophollywood", img:"https://letsdownloadgame.com/wp-content/uploads/2019/12/Download-marvels-avengers-game-apk-for-android-free.jpg", heading:"NEW MENU"},
       {id:10, cat:"newtoptech", img:"https://i.pinimg.com/originals/89/e1/52/89e1525b9ff7edc6c46046e44a90dbdf.jpg", heading:"new food"},
-      {id:10, cat:"newtopfit", img:"https://www.muscleandfitness.com/wp-content/uploads/2019/10/women-squat-home-workout-1109.jpg?w=1100&quality=86&strip=all", heading:"NEW"},
+      {id:10, cat:"newtopfit", img:"https://www.muscleandfitness.com/wp-content/uploads/2019/10/women-squat-home-workout-1109.jpg?w=1100&quality=86&strip=all", heading:"NEW MENU"},
     
     ])
   return (
