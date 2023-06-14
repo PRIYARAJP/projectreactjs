@@ -77,8 +77,8 @@ class Home extends Component{
             </div>
             </div >
 <nav className="formorgin">
-            <p > The Latest</p>
-
+            <p> The Latestw</p>
+            <p className="redline"></p>
             <div className="homepageone">
              <br></br>
               

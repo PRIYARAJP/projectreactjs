@@ -1,0 +1,98 @@
+.banner{
+    
+    display: flex;
+    
+    justify-content: center; 
+    padding: 50px;
+    gap: 20px;
+}
+.newbar{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+}
+.one{
+    
+    height: 451px;
+    width: 690px;
+    border: 2px solid black;
+    background-image: url("https://images.pexels.com/photos/1233414/pexels-photo-1233414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.a{
+    margin-bottom: 20px;
+    height: 214px;
+    width: 281px;
+    border: 2px solid black;
+    background-image: url("https://images.pexels.com/photos/1233414/pexels-photo-1233414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.b{
+    
+    height: 214px;
+    width: 281px;
+    border: 2px solid black;
+    background-image: url("https://images.pexels.com/photos/1233414/pexels-photo-1233414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hh{
+    margin-top: 170px;
+    height: 344px;
+    width: 565px;
+    border: 2px solid black;
+    background-image: url("./wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.img4{
+    width: 311px;
+    height: 221px;
+}
+.img5{
+    width: 250px;
+    height: 200px;
+}
+.mog{
+    margin: 20px;
+}
+.moger{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+    justify-content: center;
+    gap: 15px;
+    margin: 20px;
+}
+
+@media only screen and (max-width:460px){
+    .one{
+    
+        height: 0px;
+        width: 0;
+        border: 0px solid black;
+        background-image:none;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    } 
+    .hh{
+        margin-top: 0px;
+        height: 0px;
+        width:0px;
+        border: 0px solid black;
+        background-image: none;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+    }
+}

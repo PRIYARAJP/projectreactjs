@@ -1,0 +1,19 @@
+
+.img2{
+    width: 280px;
+    height: 250px;
+}
+.img3{
+    width: 150px;
+    height: 120px;
+}
+/* .topp{
+    margin-left: 100px;
+} */
+.newone{
+    width: 180px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

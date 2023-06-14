@@ -6,7 +6,13 @@
   display: flex;
   justify-content: center;
 }
+.redline{
 
+  border-bottom: 5px red solid;
+  display: inline;
+  margin-bottom: 10px;
+
+}
 .rotate{
  transform: matrix(0, -1, 1, 0, 0, 0);
  font: normal normal medium 32px/39px Montserrat;

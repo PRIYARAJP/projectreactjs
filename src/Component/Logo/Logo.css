@@ -1,0 +1,15 @@
+.logo{
+    width: 100%;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.turn{
+    transform: rotate(-90deg);
+    font-size: 23px;
+    font-weight: 600;
+    font-style: bold;
+}
+
