@@ -21,7 +21,7 @@ const Latest = () => {
                           <Link to={`/home-img/${d.id}`} state={d}>
                           <img src={d.img} alt="" className='img4'/>
                           </Link>
-                <h4 className='comm'>{d.command}</h4>
+                <h4 className='comms'>{d.command}</h4>
                     
                           <p>{d.heading}</p>
                           

@@ -16,7 +16,7 @@ const TopPost = () => {
         <img src={d.img} alt=""  height={"270px"}/>
                         
                           </Link>
-                          <h4 className='comms'><p>{d.command}</p></h4>
+                          <h4 className='commer'><p>{d.command}</p></h4>
         </>)
       })}
       <div>

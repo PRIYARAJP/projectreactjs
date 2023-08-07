@@ -85,7 +85,7 @@
 }
 
 @media only screen and (max-width:460px){
- 
+    
     .one{
     
         height: 0px;
@@ -132,6 +132,17 @@
 .comm{
     width: 200px; 
 }
-
+.commer{
+        width: 300px; 
+       margin-left: 40px;
+    }
+    .comms{
+        width: 300px; 
+     
+    }
+ 
+}
+.commer{
+    width: 400px; 
  
 }

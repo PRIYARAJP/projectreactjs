@@ -36,7 +36,7 @@ const TopPost = () => {
                           </div>
                           <div> <h5><p>{d.heading}</p> </h5>
                          
-                          <p className='com'>{d.command}</p> 
+                          <p className='comm'>{d.command}</p> 
                           </div>
                       
                         </div>
