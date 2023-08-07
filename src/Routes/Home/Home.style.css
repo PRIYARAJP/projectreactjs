@@ -26,7 +26,7 @@
     height: 214px;
     width: 281px;
     border: 2px solid black;
-    background-image: url("https://images.pexels.com/photos/1233414/pexels-photo-1233414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-image: url("https://th.bing.com/th?id=OIP.P1xzFzeXR3-Vy7rQJoEOPAHaLE&w=204&h=305&c=8&rs=1&qlt=90&o=6&dpr=1.6&pid=3.1&rm=2");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,26 +36,37 @@
     height: 214px;
     width: 281px;
     border: 2px solid black;
-    background-image: url("https://images.pexels.com/photos/1233414/pexels-photo-1233414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-image: url("https://th.bing.com/th?id=OIP.BSGCzSyrG9GYL7Hus1Rm_gHaEf&w=320&h=194&c=8&rs=1&qlt=90&o=6&dpr=1.6&pid=3.1&rm=2");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .hh{
-    margin-top: 170px;
+   
     height: 344px;
     width: 565px;
     border: 2px solid black;
-    background-image: url("./wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass.jpg");
+    background-image: url("https://tse1.mm.bing.net/th/id/OIP.3MxqaJv2Z5QsG7wIXzizjAHaEo?pid=ImgDet&rs=1");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
 }
+
+.com{
+    width: 250px; 
+}
+.comm{
+    width: 300px; 
+}
+.comms{
+    width: 400px; 
+}
 .img4{
     width: 311px;
     height: 221px;
 }
+
 .img5{
     width: 250px;
     height: 200px;
@@ -74,6 +85,7 @@
 }
 
 @media only screen and (max-width:460px){
+ 
     .one{
     
         height: 0px;
@@ -95,4 +107,31 @@
         background-size: cover;
     
     }
+    .imgss{
+        margin-bottom: 20px;
+        height: 214px;
+        width: 281px;
+        border: 2px solid black;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+.newone{
+    margin: 100px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+.newfont{
+    font-size: 15px;
+}
+.com{
+    width: 150px; 
+}
+.comm{
+    width: 200px; 
+}
+
+ 
 }

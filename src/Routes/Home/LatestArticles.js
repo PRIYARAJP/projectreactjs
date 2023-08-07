@@ -1,7 +1,7 @@
 import React,{useContext} from 'react'
 import { store } from '../../Utility/ContextStore/ContextApi'
 import { Header } from '../../Component/Common'
-import TopPost from '../Bollywood/TopPost'
+import TopPost from './TopPost'
 import "./Home.style.css"
 import { Link } from 'react-router-dom'
 
@@ -9,9 +9,9 @@ const LatestArticles = () => {
   let [count] = useContext(store)
   return (
     <div >
-      <div><Header headertext={"Latest Articles"}/></div>
+      <Header headertext={"Latest Articles"}/>
       <div className='moger'>
-        
+      {/* <Header headertext={"Latest Articles"}/> */}
       <div >
                 {count.filter((item) => item.cat === 'latestarticles').map((d, index) => {
                     return (
@@ -19,13 +19,13 @@ const LatestArticles = () => {
                           <div className='moger'>
                           
                           <div>
-                          <Link to={`/dynamic/${d.id}`} state={d}>
+                          <Link to={`/home-img/${d.id}`} state={d}>
                             <img src={d.img} alt="" className='img5'/>
                             </Link>
                             </div>
                           <div>
-                          <h4>Nature always wears the colors of<br/> the spirit.</h4>
-                   <h4>Look deep into nature, and then you<br></br> will understand everything better</h4>     
+                         
+                          <h4 className='comm'>{d.command}</h4>
                       
                           <p>{d.heading}</p>
                           </div>
@@ -35,11 +35,23 @@ const LatestArticles = () => {
                         </div>
                     )
                 })}
-                
-                <div className='hh'></div>
+                {count.filter((item) => item.cat === 'latestarticlesimg').map((d, index) => {
+    
+                return (
+                      
+                          <Link to={`/home-img/${d.id}`} state={d}>
+                            <img src={d.img} alt="" className='hh'/>
+                            </Link>
+                  
+                        
+                    )
+             
+                })}
                 
             </div>
-            <div><TopPost/></div>
+            <span>
+            <TopPost/>
+            </span>
       </div>
     </div>
   )

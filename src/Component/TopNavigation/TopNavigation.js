@@ -24,12 +24,6 @@ setformvalues(
     <Link to ='/hollywood'><div className="up">Hollywood </div></Link><br/>
     <Link to ='/fitness'><div className="up">Fitness </div></Link><br/>
     <Link to ='/food'><div className="up">Food </div></Link><br/>
-  {/* <Link to="/">Home</Link>
-  <Link to="/bollywood">Bollywood</Link>
-  <Link to="/hollywood">Hollywood</Link>
-  <Link to="/Technology">Technology</Link>
-  <Link to="/fitness">Fitness</Link>
-  <Link to="/food">Food</Link> */}
   </div>
   <div>
 

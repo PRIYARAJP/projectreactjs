@@ -1,7 +1,7 @@
+
 .bollywood{
-    display: flex;
-    justify-content: space-around;
-    color: black;
+display: flex;
+justify-content: space-around;
 }
 .img2{
     width: 280px;

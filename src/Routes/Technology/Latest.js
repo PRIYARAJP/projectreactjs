@@ -2,7 +2,7 @@ import React,{useContext} from 'react'
 import { Header } from '../../Component/Common'
 import { store } from '../../Utility/ContextStore/ContextApi'
 import { Link } from 'react-router-dom'
-import "./Home.style.css"
+import "./Technology.style.css"
 
 const Latest = () => {
   let [count] = useContext(store)
@@ -13,7 +13,7 @@ const Latest = () => {
       <div><Header headertext={"The Latest"}/></div>
             <div style={{display:"flex", gap:"15px", justifyContent:"center" }}>  
                <div className='newbar'>
-                {count.filter((item) => item.cat === 'the latest').map((d, index) => {
+                {count.filter((item) => item.cat === 'the latesttech').map((d, index) => {
                     return (
                         <div>
                           <div className='mog'>
@@ -23,7 +23,7 @@ const Latest = () => {
                           </Link>
                 <h4 className='comm'>{d.command}</h4>
                     
-                          <p>{d.heading}</p>
+
                           
                           </div>
                           

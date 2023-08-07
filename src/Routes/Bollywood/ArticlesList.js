@@ -3,33 +3,50 @@ import { Header } from '../../Component/Common'
 import "./Bollywood.style.css"
 import { store } from "../../Utility/ContextStore/ContextApi"
 import { Link } from 'react-router-dom'
-import { useNavigate } from 'react-router-dom'
+
 
 
 
 const ArticlesList = () => {
   let [count] = useContext(store)
-  let navi = useNavigate()
+
   return (
     <div>
       <Header headertext={"Bollywood"}/>
       <div>
-            <div>
+            <div className='moger'>
                 {count.filter((item) => item.cat === 'bollywood').map((d, index) => {
-                    return (
-                        <div style={{display:"flex", gap:"15px", marginTop:"35px"}}>
-                          <div>
-                          <Link to={`/dynamic/${d.id}`} state={d}>
-                          <img src={d.img} alt="" className='img2'/>
-                          </Link>
-                          </div>
-                          <div>
-                          <h4>Thalapathi Vijay</h4>
-                          <p> Stay Positive <br></br> When Negativity Sourrounds you <br/> Smile When other Frown</p>
-                          
-                          </div>
+                    return ( <div>
+                      <div className='moger'>
                       
+                      <div>
+                      <Link to={`/home-img/${d.id}`} state={d}>
+                        <img src={d.img} alt="" className='img5'/>
+                        </Link>
                         </div>
+                      <div>
+                     
+                      <h4 className='comm'>{d.command}</h4>
+                  
+                      <p>{d.heading}</p>
+                      </div>
+                      
+                      </div>
+
+                    </div>
+                        // <div style={{display:"flex", gap:"15px", marginTop:"35px"}}>
+                        //   <div>
+                        //   <Link to={`/dynamic/${d.id}`} state={d}>
+                        //   <img src={d.img} alt="" className='img2'/>
+                        //   </Link>
+                        //   </div>
+                        //   <div>
+                        //   <h4><p>{d.heading}</p> </h4>
+                        //   <p> <p className='comms'>{d.command}</p> </p>
+                          
+                        //   </div>
+                      
+                        // </div>
                     )
                 })}
             </div>

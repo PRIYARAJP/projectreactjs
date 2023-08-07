@@ -18,10 +18,12 @@ const TopPost = () => {
         <Link to={`/dynamic/${d.id}`} state={d}>
                           <img src={d.img} height={"170px"} alt="" />
                           </Link>
+                          <h4><p>{d.heading}</p></h4>
+        <p className='comms'>{d.command}</p>
         </>)  
       })}
         {/* <img src="https://cdn.lifestyleasia.com/wp-content/uploads/sites/2/2021/05/26090406/money-heist-season-5-hero.png" alt="" height={"270px"}/> */}
-        <h4>images in my mind too: a strapping man<br />  he is mineLorem ipsum dolor sit amet.</h4>
+       
       </div>
       <div>
                 {count.filter((item) => item.cat === 'hollywoodtop').map((d, index) => {
@@ -33,8 +35,8 @@ const TopPost = () => {
                           </Link>
                           </div>
                           <div>
-                          <h5>Lorem ipsum, dolor sit amet <br /> consectetur adipisicing elit.</h5>
-                          
+                          <h5><p>{d.heading}</p> </h5>
+                          <p className='comm'>{d.command}</p>
                           </div>
                       
                         </div>

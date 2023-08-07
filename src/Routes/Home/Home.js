@@ -15,7 +15,7 @@ let Home = () =>{
             <TopNavigation/>
            
             <Banner/>
-            <Latest/>
+            <Latest/> 
             <LatestArticles/>
             
             <LatestStories/>

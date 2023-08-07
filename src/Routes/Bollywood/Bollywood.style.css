@@ -10,3 +10,12 @@
 .vewww{
     justify-content: center;
 }
+.moger{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+    justify-content: center;
+    gap: 15px;
+    margin: 20px;
+}

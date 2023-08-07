@@ -16,29 +16,53 @@ const TopPost = () => {
         <Link to={`/dynamic/${d.id}`} state={d}>
                           <img src={d.img} height={"210px"} alt="" />
                           </Link>
+                          <h2><p className='comms'>{d.heading}</p> </h2>
+                          <p className='comms'>{d.command}</p>
         </>)
       })}
-        {/* <img src="https://7esl.com/wp-content/uploads/2018/03/sport-and-exercise.jpg" alt="" height={"270px"}/> */}
-        <h4>images in my mind too: a strapping man he is mine<br /> Lorem ipsum dolor sit amet.</h4>
+       {count.filter((item) => item.cat === 'newtopfit2').map((d, index) => {
+        return(<>
+        <Link to={`/dynamic/${d.id}`} state={d}>
+                          <img src={d.img} height={"210px"} alt="" />
+                          </Link>
+                          <h2 className='comms'><p>{d.heading}</p> </h2>
+                          <p className='comms'>{d.command}</p>
+        </>)
+      })}
       </div>
       <div>
                 {count.filter((item) => item.cat === 'fitnesstop').map((d, index) => {
                     return (
-                        <div style={{display:"flex", gap:"15px", marginTop:"25px"}}>
-                          <div>
-                            {/* <Link to={`/dynamic/${d.id}`}>
-                             <img src={d.img} alt="" className='img3'/>
-                            </Link> */}
-                            <Link to={`/dynamic/${d.id}`} state={d}>
-                          <img src={d.img} alt="" className='img3'/>
-                          </Link>
-                          </div>
-                          <div>
-                          <h5>Lorem ipsum, dolor sit amet <br /> consectetur adipisicing elit.</h5>
+                      <div style={{display:"flex", gap:"15px", marginTop:"25px"}}>
+                      <div>
+                        {/* <Link to={`/dynamic/${d.id}`}>
+                         <img src={d.img} alt="" className='img3'/>
+                        </Link> */}
+                        <Link to={`/dynamic/${d.id}`} state={d}>
+                      <img src={d.img} alt="" className='img3'/>
+                      </Link>
+                      </div>
+                      <div>
+                     
+                      <p className='com'>{d.command}</p>
+                      </div>
+                  
+                    </div>
+                        // <div style={{display:"flex", gap:"15px", marginTop:"25px"}}>
+                        //   <div>
+                        //     {/* <Link to={`/dynamic/${d.id}`}>
+                        //      <img src={d.img} alt="" className='img3'/>
+                        //     </Link> */}
+                        //     <Link to={`/dynamic/${d.id}`} state={d}>
+                        //   <img src={d.img} alt="" className='img3'/>
+                        //   </Link>
+                        //   </div>
+                        //   <div>
+                         
                           
-                          </div>
+                        //   </div>
                       
-                        </div>
+                        // </div>
                     )
                 })}
         </div>

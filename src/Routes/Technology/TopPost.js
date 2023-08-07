@@ -16,10 +16,11 @@ const TopPost = () => {
         <Link to={`/dynamic/${d.id}`} state={d}>
                           <img src={d.img} height={"270px"} alt="" />
                           </Link>
+                           <h4> <p className='comms'>{d.command}</p> </h4>
         </>)
       })}
         {/* <img src="https://jooinn.com/images/modern-communication-technology.jpg" alt="" height={"270px"}/> */}
-        <h4>images in my mind too: a strapping man he is mine<br /> Lorem ipsum dolor sit amet.</h4>
+       
       </div>
       <div>
                 {count.filter((item) => item.cat === 'technologytop').map((d, index) => {
@@ -33,9 +34,9 @@ const TopPost = () => {
                           <img src={d.img} alt="" className='img3'/>
                           </Link>
                           </div>
-                          <div>kjjkk
-                          <h5>Lorem ipsum, dolor sit amet <br /> consectetur adipisicing elit.</h5>
-                          
+                          <div> <h5><p>{d.heading}</p> </h5>
+                         
+                          <p className='com'>{d.command}</p> 
                           </div>
                       
                         </div>
