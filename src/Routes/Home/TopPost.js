@@ -9,7 +9,7 @@ const TopPost = () => {
   return (
     <div className='newfont'>
       {/* <h1>Top post</h1> */}
-     
+     <div className='tophome'>
       {count.filter((item) => item.cat === 'newtophome').map((d, index) => {
         return(<><div className='newone'> <Header headertext={"Top Post"}/>
         <Link to={`/dynamic/${d.id}`} state={d}>
@@ -17,13 +17,10 @@ const TopPost = () => {
                           {/* <img src={}, height={"270px"} alt="" /> */}
                           </Link>
                         <h4 className='comm'><p>{d.command}</p></h4>
-
+                   
                         </div> </>)
       })}
-      <div>
-        {/* <img src="https://miro.medium.com/max/1024/1*XNEc7sImHVsOADV_iY8xYQ.png" alt="" height={"270px"}/> */}
-        
-      </div>
+          </div>
       <div>
                 {count.filter((item) => item.cat === 'Hometop').map((d, index) => {
                     return (
