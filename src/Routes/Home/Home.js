@@ -1,6 +1,6 @@
 import React, { useContext } from "react"
 import Banner from "./Banner"
-import Latest from "./Latest"
+// import Latest from "./Latest"
 import LatestArticles from "./LatestArticles"
 import LatestStories from "./LatestStories"
 import { store } from "../../Utility/ContextStore/ContextApi"
@@ -15,7 +15,7 @@ let Home = () =>{
             <TopNavigation/>
            
             <Banner/>
-            <Latest/> 
+            {/* <Latest/>  */}
             <LatestArticles/>
             
             <LatestStories/>

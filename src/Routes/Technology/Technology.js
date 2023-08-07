@@ -1,6 +1,6 @@
 import React from "react"
 import TopPost from "./TopPost"
-import Latest from "./Latest";
+// import Latest from "./Latest";
 import ArticlesList from "./ArticlesList"
 import ArticlesListt from "./Articals";
 import "./Technology.style.css"
@@ -18,7 +18,7 @@ let Technology = () =>{
 </div>  <div className="bollywood">
         <ArticlesList/>
             <TopPost/>
-            <Latest/>
+            {/* <Latest/> */}
             </div> 
       
       
