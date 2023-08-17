@@ -11,14 +11,26 @@ const TopPost = () => {
       {/* <h1>Top post</h1> */}
       <Header headertext={"Top Post"}/>
       <div>
+      <div className='tophome'>
       {count.filter((item) => item.cat === 'newtoptech').map((d, index) => {
+        return(<><div className='newone'> 
+        <Link to={`/dynamic/${d.id}`} state={d}>
+        <img src={d.img} alt="" className='imgss'  height={"270px"}/>
+                          {/* <img src={}, height={"270px"} alt="" /> */}
+                          </Link>
+                        <p className='comm'><p>{d.command}</p></p>
+                   
+                        </div> </>)
+      })}
+          </div>
+      {/* {count.filter((item) => item.cat === 'newtoptech').map((d, index) => {
         return(<>
         <Link to={`/dynamic/${d.id}`} state={d}>
                           <img src={d.img} height={"270px"} alt="" />
                           </Link>
-                           <h4> <p className='comms'>{d.command}</p> </h4>
+                        <p className='comms'>{d.command}</p> 
         </>)
-      })}
+      })} */}
         {/* <img src="https://jooinn.com/images/modern-communication-technology.jpg" alt="" height={"270px"}/> */}
        
       </div>

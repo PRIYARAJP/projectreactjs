@@ -13,23 +13,20 @@ const Latest = () => {
       <div><Header headertext={"The Latest"}/></div>
             <div style={{display:"flex", gap:"15px", justifyContent:"center" }}>  
                <div className='newbar'>
-                {count.filter((item) => item.cat === 'the latest').map((d, index) => {
+                {count.filter((item) => item.cat === 'Hometop').map((d, index) => {
                     return (
-                        <div>
-                          <div className='mog'>
-                            
-                          <Link to={`/home-img/${d.id}`} state={d}>
-                          <img src={d.img} alt="" className='img4'/>
-                          </Link>
-                <h4 className='comms'>{d.command}</h4>
-                    
-                          <p>{d.heading}</p>
-                          
-                          </div>
-                          
-                          
-                      
-                        </div>
+                      <div className='newapp'>
+                      <div className='mog'>
+                      {/* <p className='com'>{d.command}</p>  */}
+                      <Link to={`/home-img/${d.id}`} state={d}>
+                      <img src={d.img} alt="" className='imger'/>
+                      </Link>
+                    </div>
+                    <div>
+                   
+                    <p className='comer'>{d.command}</p>
+                      </div>
+                    </div>
                     )
                 })}</div>
             </div>

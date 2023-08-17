@@ -2,7 +2,7 @@ import React from "react"
 import TopPost from "./TopPost"
 // import Latest from "./Latest";
 import ArticlesList from "./ArticlesList"
-import ArticlesListt from "./Articals";
+// import ArticlesListt from "./Articals";
 import "./Technology.style.css"
 import { TopNavigation } from "../../Component/Common"
 
@@ -13,7 +13,7 @@ let Technology = () =>{
        <div>
         <TopNavigation/>
         <div className="bollywood">
-<ArticlesListt></ArticlesListt>
+{/* <ArticlesListt></ArticlesListt> */}
        
 </div>  <div className="bollywood">
         <ArticlesList/>

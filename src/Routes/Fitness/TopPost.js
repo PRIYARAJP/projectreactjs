@@ -11,7 +11,19 @@ const TopPost = () => {
       {/* <h1>Top post</h1> */}
       <Header headertext={"Top Post"}/>
       <div>
+      <div className='tophome'>
       {count.filter((item) => item.cat === 'newtopfit').map((d, index) => {
+        return(<><div className='newone'> <div>
+        <Link to={`/dynamic/${d.id}`} state={d}>
+        <img src={d.img} alt="" className='imgss'  height={"270px"}/>
+                          {/* <img src={}, height={"270px"} alt="" /> */}
+                          </Link>
+                        <p className='comm'><p>{d.command}</p></p>
+                   
+                        </div></div> </>)
+      })}
+          </div>
+      {/* {count.filter((item) => item.cat === 'newtopfit').map((d, index) => {
         return(<>
         <Link to={`/dynamic/${d.id}`} state={d}>
                           <img src={d.img} height={"210px"} alt="" />
@@ -19,16 +31,28 @@ const TopPost = () => {
                           <h2><p className='comms'>{d.heading}</p> </h2>
                           <p className='comms'>{d.command}</p>
         </>)
+      })} */}
+      <div className='tophome'>
+      {count.filter((item) => item.cat === 'newtopfit2').map((d, index) => {
+        return(<><div className='newone'> <div>
+        <Link to={`/dynamic/${d.id}`} state={d}>
+        <img src={d.img} alt="" className='imgss'  height={"250px"}/>
+                          {/* <img src={}, height={"270px"} alt="" /> */}
+                          </Link>
+                        <p className='comm'><p>{d.command}</p></p>
+                   
+                        </div></div> </>)
       })}
-       {count.filter((item) => item.cat === 'newtopfit2').map((d, index) => {
+          </div>
+       {/* {count.filter((item) => item.cat === 'newtopfit2').map((d, index) => {
         return(<>
         <Link to={`/dynamic/${d.id}`} state={d}>
                           <img src={d.img} height={"210px"} alt="" />
                           </Link>
-                          <h2 className='comms'><p>{d.heading}</p> </h2>
+                          <h4 className='comms'><p>{d.heading}</p> </h4>
                           <p className='comms'>{d.command}</p>
         </>)
-      })}
+      })} */}
       </div>
       <div>
                 {count.filter((item) => item.cat === 'fitnesstop').map((d, index) => {
@@ -66,8 +90,9 @@ const TopPost = () => {
                     )
                 })}
         </div>
-        <div style={{height:"410px",width:"320px", border:"2px solid black", display:"flex", justifyContent:"center", alignItems:"center"}}><p>Advertisement</p></div>
-    </div>
+        <div className='adverrrr'><div className='Advertisement'><p>Advertisement</p></div></div>
+       
+         </div>
     
   )
 }

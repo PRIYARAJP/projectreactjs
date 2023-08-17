@@ -1,5 +1,5 @@
 import React,{useContext} from 'react'
-import { Header } from '../../Component/Common'
+// import { Header } from '../../Component/Common'
 import { store } from "../../Utility/ContextStore/ContextApi"
 import { Link } from 'react-router-dom'
 import "./Bollywood.style.css"
@@ -8,17 +8,30 @@ const TopPost = () => {
   let [count] = useContext(store)
   return (
     <div>
-      {/* <h1>Top post</h1> */}
-      <Header headertext={"Top Post"}/>
+      <h1>Top post</h1>
+      {/* <Header headertext={"Top Post"}/> */}
+      <div className='tophome'>
       {count.filter((item) => item.cat === 'BollywoodTopposthigh').map((d, index) => {
+        return(<><div className='newone'>
+           {/* <Header headertext={"Top Post"}/> */}<div>
+        <Link to={`/dynamic/${d.id}`} state={d}>
+        <img src={d.img} alt="" className='imgss'  height={"270px"}/>
+                          {/* <img src={}, height={"270px"} alt="" /> */}
+                          </Link>
+                        <p className='comm'><p>{d.command}</p></p>
+                   
+                        </div> </div></>)
+      })}
+          </div>
+      {/* {count.filter((item) => item.cat === 'BollywoodTopposthigh').map((d, index) => {
         return(<>
         <Link to={`/dynamic/${d.id}`} state={d}>
         <img src={d.img} alt=""  height={"270px"}/>
                         
                           </Link>
-                          <h4 className='commer'><p>{d.command}</p></h4>
+                          <p className='commer'><p>{d.command}</p></p>
         </>)
-      })}
+      })} */}
       <div>
         {/* <img src="https://miro.medium.com/max/1024/1*XNEc7sImHVsOADV_iY8xYQ.png" alt="" height={"270px"}/> */}
        
@@ -36,7 +49,7 @@ const TopPost = () => {
                           </Link>
                           </div>
                           <div>
-                          <h5>     <h4 className='comm'><p>{d.command}</p></h4></h5>
+                             <p className='comm'><p>{d.command}</p></p>
                           {/* <p>{d.heading}</p> */}
                           </div>
                       
@@ -44,8 +57,9 @@ const TopPost = () => {
                     )
                 })}
         </div>
-        <div style={{height:"410px",width:"320px", border:"2px solid black", display:"flex", justifyContent:"center", alignItems:"center"}}><p>Advertisement</p></div>
-    </div>
+        <div className='adverrrr'><div className='Advertisement'><p>Advertisement</p></div></div>
+       
+           </div>
     
   )
 }

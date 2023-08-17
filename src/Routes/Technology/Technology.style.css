@@ -98,7 +98,7 @@
   .Travelleft{
     color: rgb(111, 107, 107);
     font-size: 15px;
-    width: 400px;
+    width: 200px;
   }
   .twostimg{
     padding: 10px;
@@ -225,11 +225,7 @@
     margin-left: 50px;
     width: 400px;
   }
-  .homepageone{
-    display: flex;
-    flex-wrap: wrap;
   
-  }
   .avatars{
   display: flex;
   flex-direction: column;
@@ -237,10 +233,7 @@
     height: 600px;
     flex-wrap: wrap;
   }
-  .homepageoneleft{
-    display:block;
-    
-  }
+ 
   .techfirst{
     text-align: center;
     display: flex;
@@ -299,6 +292,13 @@
     background-size: cover;
   background-image:url(./rythm.png);
   }
+  .handclaper{
+    margin-right: 10px;
+    width: 40px;
+  height: 40px;
+    background-size: cover;
+  background-image:url(./rythm.png);
+  }
   .rectpgsc{
     
     width: 400px;
@@ -315,9 +315,19 @@
     
     background-color: #A2A2A2;
   }
-  
+  .comer{
+    width: 300px;
+  }
   
   @media only screen and (max-width:460px){
+    .comer{
+      width: 220px;
+    }
+    
+    .newapp{
+      display: flex;
+      flex-direction: row-reverse;
+    }
    .flexx{
     display: block;
     
@@ -429,7 +439,7 @@
     .Travelleft{
       color: rgb(111, 107, 107);
       font-size: 15px;
-      width: 310px;
+      width: 150px;
     }
     .avatarest{
       opacity: 1;
@@ -466,20 +476,7 @@
         font-size: 15px;
       
       }
-      .instalogo{
-        opacity: .5;
-        width: 0px;
-      height: 0px;
-        background-size: cover;
-      background-image:url('https://thumbs.dreamstime.com/z/instagram-facebook-youtube-twitter-popular-social-media-video-platform-internet-services-kyiv-ukraine-april-179628965.jpg');
-      }
-      .instalogoes{
-        opacity: .5;
-        width: 120px;
-        height: 30px;
-        background-size: cover;
-      background-image:url('https://thumbs.dreamstime.com/z/instagram-facebook-youtube-twitter-popular-social-media-video-platform-internet-services-kyiv-ukraine-april-179628965.jpg');
-      }
+ 
       .reactjsanimation{
         width: 350px;
       height: 200px;

@@ -27,7 +27,7 @@ const ArticlesList = () => {
                       </div>
                     <div>
                    
-                    <h4 className='comm'>{d.command}</h4>
+                    <p className='comm'>{d.command}</p>
                 
                     <p>{d.heading}</p>
                     </div>

@@ -16,7 +16,7 @@ const TopPost = () => {
         <img src={d.img} alt="" className='imgss'  height={"270px"}/>
                           {/* <img src={}, height={"270px"} alt="" /> */}
                           </Link>
-                        <h4 className='comm'><p>{d.command}</p></h4>
+                        <p className='comm'><p>{d.command}</p></p>
                    
                         </div> </>)
       })}
@@ -42,7 +42,7 @@ const TopPost = () => {
                     )
                 })}
         </div>
-        <div style={{height:"410px",width:"320px", border:"2px solid black", display:"flex", justifyContent:"center", alignItems:"center"}}><p>Advertisement</p></div>
+        <div className='adverrrr'><div className='Advertisement'><p>Advertisement</p></div></div>
     </div>
     
   )

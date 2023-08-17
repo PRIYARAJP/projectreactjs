@@ -13,15 +13,27 @@ const TopPost = () => {
       <Header headertext={"Top Post"}/></div>
       <div  >
       <div >
+      <div className='tophome'>
       {count.filter((item) => item.cat === 'newtophollywood').map((d, index) => {
+        return(<><div className='newone'> <div>
+        <Link to={`/dynamic/${d.id}`} state={d}>
+        <img src={d.img} alt="" className='imgss'  height={"270px"}/>
+                          {/* <img src={}, height={"270px"} alt="" /> */}
+                          </Link>
+                        <p className='comm'><p>{d.command}</p></p>
+                   
+                        </div></div> </>)
+      })}
+          </div>
+      {/* {count.filter((item) => item.cat === 'newtophollywood').map((d, index) => {
         return(<>
         <Link to={`/dynamic/${d.id}`} state={d}>
                           <img src={d.img} height={"170px"} alt="" />
                           </Link>
-                          <h4><p>{d.heading}</p></h4>
+                       <p>{d.heading}</p>
         <p className='comms'>{d.command}</p>
         </>)  
-      })}
+      })} */}
         {/* <img src="https://cdn.lifestyleasia.com/wp-content/uploads/sites/2/2021/05/26090406/money-heist-season-5-hero.png" alt="" height={"270px"}/> */}
        
       </div>
@@ -43,8 +55,8 @@ const TopPost = () => {
                     )
                 })}
         </div>
-        <div style={{height:"410px",width:"320px", border:"2px solid black", display:"flex", justifyContent:"center", alignItems:"center"}}><p>Advertisement</p></div>
-    </div>
+        <div className='adverrrr'><div className='Advertisement'><p>Advertisement</p></div></div>
+  </div>
     </div> 
   )
 }

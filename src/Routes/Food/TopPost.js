@@ -9,10 +9,23 @@ const TopPost = () => {
   return (
     <>
     <div>
-      {/* <h1>Top post</h1> */}
+      <h1 className='Top'>Top post</h1>
       <Header headertext={"Top Post"}/>
       <div>
+      <div className='tophome'>
       {count.filter((item) => item.cat === 'newtopfood').map((d, index) => {
+        return(<><div className='newone'> 
+        {/* <Header headertext={"Top Post"}/> */}
+        <Link to={`/dynamic/${d.id}`} state={d}>
+        <img src={d.img} alt="" className='imgss'  height={"270px"}/>
+                          {/* <img src={}, height={"270px"} alt="" /> */}
+                          </Link>
+                        <p className='comm'><p>{d.command}</p></p>
+                   
+                        </div> </>)
+      })}
+          </div>
+      {/* {count.filter((item) => item.cat === 'newtopfood').map((d, index) => {
         return(<>
         <Link to={`/dynamic/${d.id}`} state={d}>
                           <img src={d.img} height={"270px"} alt="" />
@@ -20,7 +33,7 @@ const TopPost = () => {
                           <h4><p>{d.heading}</p></h4>
         <p className='commer'>{d.command}</p>
         </>)
-      })}
+      })} */}
         {/* <img src="https://travelspoonfood.files.wordpress.com/2012/02/img_6791.jpg" alt="" height={"270px"}/> */}
       
       </div>
@@ -47,8 +60,9 @@ const TopPost = () => {
                         </>
                     )
                 })}
+                 
         </div>
-        <div style={{height:"410px",width:"320px", border:"2px solid black", display:"flex", justifyContent:"center", alignItems:"center"}}><p>Advertisement</p></div>
+        <div className='adverrrr'><div className='Advertisement'><p>Advertisement</p></div></div>
     </div>
     </>
   )
