@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import { Link } from 'react-router-dom'
-import { Logo } from '../Common'
+// import { Logo } from '../Common'
 import  "./TopNavigation.style.css"
 
 const TopNavigation = () => {
@@ -36,6 +36,7 @@ setformvalues(
 }
 return(
 <>    
+<div className='posstr'>
 <div className='app'>
 
 <nav className='rotate'>The</nav>
@@ -63,7 +64,7 @@ return(
       
     
 <hr/> 
-
+</div>
 </>)
   // return (
     // <div>

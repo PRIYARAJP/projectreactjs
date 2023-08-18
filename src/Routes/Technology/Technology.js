@@ -9,7 +9,7 @@ import { TopNavigation } from "../../Component/Common"
 
 let Technology = () =>{
     
-    return(
+    return(<>
        <div>
         <TopNavigation/>
         <div className="bollywood">
@@ -22,7 +22,7 @@ let Technology = () =>{
             </div> 
       
       
-       </div>
+       </div></>
     )
 }
 export default Technology

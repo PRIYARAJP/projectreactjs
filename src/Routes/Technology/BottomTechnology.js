@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const BottomTechnology = () => {
     let [count] = useContext(store)
-    return (
+    return (<>
       <div >
       
         <div >
@@ -17,7 +17,7 @@ const BottomTechnology = () => {
                           <div className='newapp'>
                             <div className='mog'>
                             {/* <p className='com'>{d.command}</p>  */}
-                            <Link to={`/home-img/${d.id}`} state={d}>
+                            <Link to={`/${d.icon}/${d.id}`} state={d}>
                             <img src={d.img} alt="" className='imger'/>
                             </Link>
                           </div>
@@ -30,7 +30,7 @@ const BottomTechnology = () => {
                   })}</div>
               </div>
           </div>
-      </div>
+      </div></>
     )
   }
 

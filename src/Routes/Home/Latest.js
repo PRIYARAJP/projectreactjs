@@ -6,7 +6,7 @@ import "./Home.style.css"
 
 const Latest = () => {
   let [count] = useContext(store)
-  return (
+  return (<>
     <div >
     
       <div >
@@ -14,11 +14,13 @@ const Latest = () => {
             <div style={{display:"flex", gap:"15px", justifyContent:"center" }}>  
                <div className='newbar'>
                 {count.filter((item) => item.cat === 'Hometop').map((d, index) => {
-                    return (
+                  console.log(d.icon);
+                    return (<>
                       <div className='newapp'>
                       <div className='mog'>
                       {/* <p className='com'>{d.command}</p>  */}
-                      <Link to={`/home-img/${d.id}`} state={d}>
+                      
+                      <Link to={`/${d.icon}/${d.id}`} state={d}>
                       <img src={d.img} alt="" className='imger'/>
                       </Link>
                     </div>
@@ -26,12 +28,12 @@ const Latest = () => {
                    
                     <p className='comer'>{d.command}</p>
                       </div>
-                    </div>
+                    </div></>
                     )
                 })}</div>
             </div>
         </div>
-    </div>
+    </div></>
   )
 }
 

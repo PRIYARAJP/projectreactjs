@@ -12,18 +12,18 @@ import { Link } from 'react-router-dom'
 const ArticlesList = () => {
   let [count] = useContext(store)
   // let navi = useNavigate()
-  return (
+  return (<>
     <div>
       <Header headertext={"Technology"}/>
       <div>
         <div>
                 {count.filter((item) => item.cat === 'technology').map((d, index) => {
-                    return (
+                    return (<>
                       <div>
                       <div className='moger'>
                       
                       <div>
-                      <Link to={`/home-img/${d.id}`} state={d}>
+                      <Link to={`/${d.icon}/${d.id}`} state={d}>
                         <img src={d.img} alt="" className='img5'/>
                         </Link>
                         </div>
@@ -36,27 +36,14 @@ const ArticlesList = () => {
                       
                       </div>
 
-                    </div>
-                    //   <div style={{display:"flex", gap:"15px", marginTop:"35px"}}>
-                    //   <div className='avatarsss'>
-                        
-                    //     <Link to={`/dynamic/${d.id}`} state={d}>
-                    //     <img src={d.img} alt="" className='img2'/>
-                    //     </Link>
-                    //     </div>
-                    //     <div>
-                    //     <h2>                          <h4><p>{d.heading}</p> </h4></h2>     
-                    //       <hr /><p className='comm'>{d.command}</p>
-                        
-                       
-                    // </div>
-                    //   </div>
+                    </div></>
+                
                   )
                 })}
             </div>
          
         </div>
-    </div>
+    </div></>
   )
 }
 

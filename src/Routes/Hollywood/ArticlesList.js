@@ -21,7 +21,7 @@ const ArticlesList = () => {
                       <div className='moger'>
                       
                       <div>
-                      <Link to={`/home-img/${d.id}`} state={d}>
+                      <Link to={`/${d.icon}/${d.id}`} state={d}>
                         <img src={d.img} alt="" className='img5'/>
                         </Link>
                         </div>

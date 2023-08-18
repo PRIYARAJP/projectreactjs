@@ -6,13 +6,13 @@ import "./Home.style.css"
 
 const TopPost = () => {
   let [count] = useContext(store)
-  return (
+  return (<>
     <div className='newfont'>
       {/* <h1>Top post</h1> */}
      <div className='tophome'>
       {count.filter((item) => item.cat === 'newtophome').map((d, index) => {
         return(<><div className='newone'> <Header headertext={"Top Post"}/>
-        <Link to={`/dynamic/${d.id}`} state={d}>
+        <Link to={`/${d.icon}/${d.id}`} state={d}>
         <img src={d.img} alt="" className='imgss'  height={"270px"}/>
                           {/* <img src={}, height={"270px"} alt="" /> */}
                           </Link>
@@ -23,13 +23,13 @@ const TopPost = () => {
           </div>
       <div>
                 {count.filter((item) => item.cat === 'Hometop').map((d, index) => {
-                    return (
+                    return (<>
                         <div style={{display:"flex", gap:"15px", marginTop:"25px"}}>
                           <div>
                             {/* <Link to={`/dynamic/${d.id}`}>
                              <img src={d.img} alt="" className='img3'/>
                             </Link> */}
-                            <Link to={`/dynamic/${d.id}`} state={d}>
+                            <Link to={`/${d.icon}/${d.id}`} state={d}>
                           <img src={d.img} alt="" className='img3'/>
                           </Link>
                           </div>
@@ -38,12 +38,12 @@ const TopPost = () => {
                           <p className='com'>{d.command}</p>
                           </div>
                       
-                        </div>
+                        </div></>
                     )
                 })}
         </div>
         <div className='adverrrr'><div className='Advertisement'><p>Advertisement</p></div></div>
-    </div>
+    </div></>
     
   )
 }

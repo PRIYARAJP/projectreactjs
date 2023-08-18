@@ -35,7 +35,7 @@ const TopPost = () => {
       <div className='tophome'>
       {count.filter((item) => item.cat === 'newtopfit2').map((d, index) => {
         return(<><div className='newone'> <div>
-        <Link to={`/dynamic/${d.id}`} state={d}>
+        <Link to={`/${d.icon}/${d.id}`} state={d}>
         <img src={d.img} alt="" className='imgss'  height={"250px"}/>
                           {/* <img src={}, height={"270px"} alt="" /> */}
                           </Link>
@@ -62,7 +62,7 @@ const TopPost = () => {
                         {/* <Link to={`/dynamic/${d.id}`}>
                          <img src={d.img} alt="" className='img3'/>
                         </Link> */}
-                        <Link to={`/dynamic/${d.id}`} state={d}>
+                        <Link to={`/${d.icon}/${d.id}`} state={d}>
                       <img src={d.img} alt="" className='img3'/>
                       </Link>
                       </div>

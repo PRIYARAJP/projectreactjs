@@ -14,7 +14,7 @@ const TopPost = () => {
       {count.filter((item) => item.cat === 'BollywoodTopposthigh').map((d, index) => {
         return(<><div className='newone'>
            {/* <Header headertext={"Top Post"}/> */}<div>
-        <Link to={`/dynamic/${d.id}`} state={d}>
+        <Link to={`/${d.icon}/${d.id}`} state={d}>
         <img src={d.img} alt="" className='imgss'  height={"270px"}/>
                           {/* <img src={}, height={"270px"} alt="" /> */}
                           </Link>
@@ -44,7 +44,7 @@ const TopPost = () => {
                             {/* <Link to={`/dynamic/${d.id}`}>
                              <img src={d.img} alt="" className='img3'/>
                             </Link> */}
-                            <Link to={`/dynamic/${d.id}`} state={d}>
+                            <Link to={`/${d.icon}/${d.id}`} state={d}>
                           <img src={d.img} alt="" className='img3'/>
                           </Link>
                           </div>

@@ -15,9 +15,10 @@ const AppRoutes = () => {
         <Route path='/technology' element={<Technology/>}/>
         <Route path='/fitness' element={<Fitness/>}/>
         <Route path='/food' element={<Food/>}/>
-        <Route path="/dynamic/:productId" element={<Dynamic/>}/>
-        <Route path="/home-img/:productId" element={<Dynamic/>}/>
-        <Route path="/home-img/:productId" element={<Dynamic/>}/>
+        {/* <Route path="/Home/:productId" element={<Dynamic/>}/> */}
+        <Route path="/:producticon/:productId" element={<Dynamic/>}/>
+        {/* <Route path="/home-img/:productId" element={<Dynamic/>}/>
+        <Route path="/home-img/:productId" element={<Dynamic/>}/> */}
       </Routes>
       </BrowserRouter>
     </div>

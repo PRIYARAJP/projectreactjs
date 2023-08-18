@@ -1,11 +1,11 @@
 import React ,{ useContext } from "react";
 import "./Technology.style.css"
 
-// import { Header } from '../../Component/Common'
+
 
 import { store } from "../../Utility/ContextStore/ContextApi"
 import { Link } from 'react-router-dom'
-// import Latest from "../Home/Latest";
+
 const ArticlesListt = () => {
     
     
@@ -44,16 +44,16 @@ const ArticlesListt = () => {
  
     </div>
     {count.filter((item) => item.cat === 'Reactjs').map((d, index) => {
-                    return (
+                    return (<>
                         <div style={{display:"flex", gap:"15px", marginTop:"35px"}}>
                           <div className='avatarsss'>
-                          <Link to={`/dynamic/${d.id}`} state={d}>
+                          <Link to={`/${d.icon}/${d.id}`} state={d}>
                           <img src={d.img} alt="" className='reactjsanimation'/>
                           </Link>
                           
                           
                           </div>
-                        </div>
+                        </div></>
                     )
                 })}
     
@@ -66,7 +66,7 @@ const ArticlesListt = () => {
                     return (
                         <div style={{display:"flex", gap:"15px", marginTop:"35px"}}>
                           <div className='avatarsss'>
-                          <Link to={`/dynamic/${d.id}`} state={d}>
+                          <Link to={`/${d.icon}/${d.id}`} state={d}>
                           <img src={d.img} alt="" className='rectpgsc'/>
                           </Link>
                           
@@ -75,8 +75,7 @@ const ArticlesListt = () => {
                         </div>
                     )
                 })}
-    
-        {/* <div className="rectpgsc"></div> */}
+ 
         <div  className="homepageone">
         <div className="RJArja">React</div>
         <div className="RJArja">JavaScript</div>

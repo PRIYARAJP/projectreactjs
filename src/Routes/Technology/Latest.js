@@ -6,7 +6,7 @@ import "./Technology.style.css"
 
 const Latest = () => {
   let [count] = useContext(store)
-  return (
+  return (<>
     <div >
     
       <div >
@@ -18,7 +18,7 @@ const Latest = () => {
                         <div>
                           <div className='mog'>
                             
-                          <Link to={`/home-img/${d.id}`} state={d}>
+                          <Link to={`/${d.icon}/${d.id}`} state={d}>
                           <img src={d.img} alt="" className='img4'/>
                           </Link>
                 <h4 className='comms'>{d.command}</h4>
@@ -34,7 +34,7 @@ const Latest = () => {
                 })}</div>
             </div>
         </div>
-    </div>
+    </div></>
   )
 }
 

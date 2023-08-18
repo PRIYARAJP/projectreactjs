@@ -10,11 +10,9 @@ import BottomFitness from './Fitness/BottomFitness'
 import BottomFood from './Food/BottomFood'
 const Dynamic = () => {
   let loc = useLocation()
-  // let locat = useLocation()
-  // const locs =[locat.state.id+1,locat.state.id+2,locat.state.id+3]
+
   let navi = useNavigate()
-// const [threeip,setthreeip]=useState();
-  console.log(loc);
+
   const handleCancel=()=>{
     navi(-1);
   }
@@ -69,7 +67,7 @@ else {
   }
   
   return (
-    <>
+    <><div className='posstr'>
   <div className='apper'>
 <div className='apper'>
 <span className='upro'>The</span>
@@ -80,8 +78,8 @@ else {
 onClick={handleCancel}
 ><p className='getstart'>
 Get Started</p></div>
-</div>  
-<hr></hr>
+</div> <hr></hr> </div>
+
     <div className='container'>
         <h1>{loc.state.heading}</h1>
 
@@ -143,15 +141,7 @@ Get Started</p></div>
        
       
          <h1 onClick={handleCancel}>BACK</h1>
-          {/* {
-            loc.map((item) => {
-              return(
-                <div key={item.id}>
-                  <div>{item.state.title}</div>
-                </div>
-              )
-            })
-          } */}
+        
 
         </div>
    </>

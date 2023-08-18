@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom'
 
 const Banner = () => {
   let [count] = useContext(store)
-  return (
+  return (<>
     <div><div className='banner'>
       {count.filter((item) => item.cat === "homebanner").map((d, index) =>{
                 return(<>
                  
                      
-                     <Link to={`/home-img/${d.id}`} state={d}>
+                     <Link to={`/${d.icon}/${d.id}`} state={d}>
                       <div className='one'></div> </Link>
                     
                   
@@ -54,7 +54,7 @@ const Banner = () => {
 
 </div>
 </div>
-    </div>
+    </div></>
   )
 }
 

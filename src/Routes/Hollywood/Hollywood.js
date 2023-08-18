@@ -7,14 +7,14 @@ import { TopNavigation } from "../../Component/Common"
 
 let Bollywood = () =>{
     
-    return(
+    return(<>
        <div>
         <TopNavigation/>
         <div className="bollywood">
             <ArticlesList/>
             <TopPost/>
        </div>
-       </div>
+       </div></>
     )
 }
 export default Bollywood

@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 const ArticlesList = () => {
   let [count] = useContext(store)
 
-  return (
+  return (<>
     <div>
     <Header headertext={"Bollywood"}/>
     <div>
@@ -21,7 +21,7 @@ const ArticlesList = () => {
                     <div className='moger'>
                     
                     <div>
-                    <Link to={`/home-img/${d.id}`} state={d}>
+                    <Link to={`/${d.icon}/${d.id}`} state={d}>
                       <img src={d.img} alt="" className='img5'/>
                       </Link>
                       </div>
@@ -73,7 +73,7 @@ const ArticlesList = () => {
               })}
           </div> */}
       </div>
-  </div>
+  </div></>
     // <div>
     //   <Header headertext={"Bollywood"}/>
     //   <div>

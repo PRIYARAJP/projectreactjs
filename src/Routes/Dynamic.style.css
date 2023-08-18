@@ -29,6 +29,7 @@
     height: 30px;
     margin-top: 40px;
     background-size: cover;
+    z-index: -1;
   background-image:url('https://thumbs.dreamstime.com/z/instagram-facebook-youtube-twitter-popular-social-media-video-platform-internet-services-kyiv-ukraine-april-179628965.jpg');
   }
   .splitss{
@@ -54,6 +55,7 @@
 .getstartbor{
     margin-right:10px ;
     border: 1px rgb(8, 107, 8) solid;
+    background-color: white;
 }
 .booold{
     font-size: 35px;
@@ -90,6 +92,7 @@
     margin: 10px;
 }
   @media only screen and (max-width:460px){
+    
     .imger{
         width: 100px;
         height: 100px;

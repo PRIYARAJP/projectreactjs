@@ -4,14 +4,14 @@ import { Header } from '../../Component/Common'
 
 const LatestStories = () => {
   let [count] = useContext(store)
-  return (
+  return (<>
     <div>
        <div>
       <div><Header headertext={"Latest Stories"}/></div>
       <div >
             <div style={{display:"flex", gap:"15px", justifyContent:"center"}} className='avatarsss'>
                 {count.filter((item) => item.cat === 'LateststoryHome').map((d, index) => {
-                    return (
+                    return (<>
                         <div >
                           <div className='comms'>
               
@@ -22,13 +22,13 @@ const LatestStories = () => {
                           
                           </div>
           
-                        </div>
+                        </div></>
                     )
                 })}
             </div>
         </div>
     </div>
-    </div>
+    </div></>
   )
 }
 

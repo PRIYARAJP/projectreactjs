@@ -1,4 +1,4 @@
-import React, { useContext } from "react"
+import React from "react"
 import TopPost from "./TopPost"
 import ArticlesList from "./ArticlesList"
 import "./Fitness.style.css"

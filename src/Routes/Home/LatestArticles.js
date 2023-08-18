@@ -7,19 +7,19 @@ import { Link } from 'react-router-dom'
 
 const LatestArticles = () => {
   let [count] = useContext(store)
-  return (
+  return (<>
     <div >
       <Header headertext={"Latest Articles"}/>
       <div className='moger'>
       {/* <Header headertext={"Latest Articles"}/> */}
       <div >
                 {count.filter((item) => item.cat === 'latestarticles').map((d, index) => {
-                    return (
+                    return (<>
                         <div>
                           <div className='moger'>
                           
                           <div>
-                          <Link to={`/home-img/${d.id}`} state={d}>
+                          <Link to={`/${d.icon}/${d.id}`} state={d}>
                             <img src={d.img} alt="" className='img5'/>
                             </Link>
                             </div>
@@ -32,18 +32,18 @@ const LatestArticles = () => {
                           
                           </div>
 
-                        </div>
+                        </div></>
                     )
                 })}
                 {count.filter((item) => item.cat === 'latestarticlesimg').map((d, index) => {
     
-                return (
+                return (<>
                       
                           <Link to={`/home-img/${d.id}`} state={d}>
                             <img src={d.img} alt="" className='hh'/>
                             </Link>
                   
-                        
+                            </>
                     )
              
                 })}
@@ -53,7 +53,7 @@ const LatestArticles = () => {
             <TopPost/>
             </span>
       </div>
-    </div>
+    </div></>
   )
 }
 
