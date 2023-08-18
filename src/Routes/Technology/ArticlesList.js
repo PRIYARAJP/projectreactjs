@@ -14,7 +14,7 @@ const ArticlesList = () => {
   let [count] = useContext(store)
   // let navi = useNavigate()
   return (<>
-    <div>
+    <div  >
       <Header headertext={"Technology"}/>
       <div>
         <div>

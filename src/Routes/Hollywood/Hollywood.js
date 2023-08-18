@@ -8,13 +8,14 @@ import { TopNavigation } from "../../Component/Common"
 let Bollywood = () =>{
     
     return(<>
-       <div>
+      
         <TopNavigation/>
-        <div className="bollywood">
+        <span className="flexeeeeeeeeeee">
             <ArticlesList/>
             <TopPost/>
-       </div>
-       </div></>
+            </span>
+       
+       </>
     )
 }
 export default Bollywood

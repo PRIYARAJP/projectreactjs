@@ -1,6 +1,4 @@
-
-
-import Footer from './Routes/Footer';
+// import Footer from './Routes/Footer';
 import AppRoutes from './Utility/AppRoutes';
 import ContextApi from "./Utility/ContextStore/ContextApi"
 
@@ -9,7 +7,7 @@ function App() {
     <div>
       <ContextApi>
       <AppRoutes/>
-      <Footer/>
+      {/* <Footer/> */}
       </ContextApi>
 
 

@@ -10,10 +10,10 @@ let Bollywood = () =>{
     return(
        <div>
         <TopNavigation/>
-        <div className="bollywood">
+        <span className="flexeeeeeeeeeee">
             <ArticlesList/>
             <TopPost/>
-       </div>
+       </span>
        </div>
     )
 }

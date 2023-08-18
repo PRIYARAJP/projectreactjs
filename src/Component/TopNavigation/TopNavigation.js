@@ -12,10 +12,8 @@ const TopNavigation = () => {
 const opentag=()=>{
 setformvalues(
    {
-    Contant :<>      <div>
-    <div>
-        {/* <Logo/> */}
-    </div>
+    Contant :<>      <div >
+    
   
   <Link to ='/'> 
   <div className="up">Home </div></Link><br/>
@@ -25,9 +23,7 @@ setformvalues(
     <Link to ='/fitness'><div className="up">Fitness </div></Link><br/>
     <Link to ='/food'><div className="up">Food </div></Link><br/>
   </div>
-  <div>
 
-  </div>
 
     </>,
    }
@@ -37,6 +33,7 @@ setformvalues(
 return(
 <>    
 <div className='posstr'>
+
 <div className='app'>
 
 <nav className='rotate'>The</nav>
@@ -45,13 +42,9 @@ return(
 <i class="fa fa-bars" ></i></span></h1>
 
 </div>
-<br/>
-<div>{formvalues.Contant}</div>
 
-    {/* <nav  className="heading">     */}
-
-       
-      <div className='nav'>
+  
+<div className='nav'>
       <Link to="/"><div className="updates">Home</div></Link>
       <Link to="/bollywood"><div className="updates">Bollywood</div></Link>
       <Link to="/hollywood"><div className="updates">Hollywood</div></Link>
@@ -59,12 +52,39 @@ return(
       <Link to="/fitness"><div className="updates">Fitness</div></Link>
       <Link to="/food"><div className="updates">Food</div></Link>
       </div>
-      {/* </nav> */}
-  
-      
-    
+
+      <div>{formvalues.Contant}</div>
+         
 <hr/> 
 </div>
+{/* <div className='posstr'> */}
+{/* <div className='app'>
+
+<nav className='rotate'>The</nav>
+<h1>Siren<span className="i" onClick={opentag}>
+
+<i class="fa fa-bars" ></i></span></h1>
+
+</div> */}
+{/* <br/> */}
+
+
+    {/* <nav  className="heading">     */}
+
+{/*        
+      <div className='nav'>
+      <Link to="/"><div className="updates">Home</div></Link>
+      <Link to="/bollywood"><div className="updates">Bollywood</div></Link>
+      <Link to="/hollywood"><div className="updates">Hollywood</div></Link>
+      <Link to="/Technology"><div className="updates">Technology</div></Link>
+      <Link to="/fitness"><div className="updates">Fitness</div></Link>
+      <Link to="/food"><div className="updates">Food</div></Link>
+      </div> */}
+      
+  
+      
+
+{/* </div> */}
 </>)
   // return (
     // <div>

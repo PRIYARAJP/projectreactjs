@@ -1,7 +1,7 @@
 import React,{useContext} from 'react'
 import { store } from '../../Utility/ContextStore/ContextApi'
 import { Header } from '../../Component/Common'
-import TopPost from './TopPost'
+
 import "./Home.style.css"
 import { Link } from 'react-router-dom'
 import Travel from '../Travel'
@@ -9,7 +9,7 @@ import Travel from '../Travel'
 const LatestArticles = () => {
   let [count] = useContext(store)
   return (<>
-    <div >
+   
      
       <div className='moger'> 
       {/* <Header headertext={"Latest Articles"}/> */}
@@ -52,9 +52,9 @@ const LatestArticles = () => {
                 
             </div>
             <span>
-            <TopPost/>
+            {/* */}
             </span>
-      </div>
+   
     </div></>
   )
 }

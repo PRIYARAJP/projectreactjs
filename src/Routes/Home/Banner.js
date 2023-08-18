@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const Banner = () => {
   let [count] = useContext(store)
   return (<>
-    <div><div className='banner'>
+    <div className='banner'>
       {count.filter((item) => item.cat === "homebanner").map((d, index) =>{
                 return(<>
                  
@@ -53,7 +53,7 @@ const Banner = () => {
 
 
 </div>
-</div>
+
     </div></>
   )
 }

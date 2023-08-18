@@ -5,6 +5,7 @@ import LatestArticles from "./LatestArticles"
 import LatestStories from "./LatestStories"
 // import { store } from "../../Utility/ContextStore/ContextApi"
 import { TopNavigation } from "../../Component/Common"
+import TopPost from "./TopPost"
 
 
 let Home = () =>{
@@ -16,8 +17,9 @@ let Home = () =>{
            
             <Banner/>
             {/* <Latest/>  */}
+            <span className="flexeeeeeeeeeeess">
             <LatestArticles/>
-            
+            <TopPost/> </span>
             <LatestStories/>
         </div></>
     )

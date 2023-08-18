@@ -11,7 +11,7 @@ const Latest = () => {
     
       <div><Header headertext={"The Latest"}/></div>
             <div style={{display:"flex", gap:"15px", justifyContent:" space-between" ,}}>  
-               <div className='newbar'>
+               <div className='newbarer'>
                 {count.filter((item) => item.cat === 'Hometop').map((d, index) => {
                   console.log(d.icon);
                     return (<>

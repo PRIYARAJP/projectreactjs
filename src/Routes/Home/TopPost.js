@@ -12,21 +12,21 @@ const TopPost = () => {
       <h1 className='topppps'><span>Top post</span><hr className='toppppsnew'></hr> </h1>
      <div className='tophome'>
       {count.filter((item) => item.cat === 'newtophome').map((d, index) => {
-        return(<><div className='newone'> 
+        return(<> <div className='adverrrr'><div className='newone'> 
         
         <Link to={`/${d.icon}/${d.id}`} state={d}>
         <img src={d.img} alt="" className='imgss'  height={"270px"}/>
                           
                           </Link>
                         <p className='comm'><p>{d.command}</p></p>
-                   
+                   </div>
                         </div> </>)
       })}
           </div>
       <div>
                 {count.filter((item) => item.cat === 'Hometop').map((d, index) => {
                     return (<>
-                        <div style={{display:"flex", gap:"15px", marginTop:"25px"}}>
+                      <div className='adverrrr'>
                           <div>
                             {/* <Link to={`/dynamic/${d.id}`}>
                              <img src={d.img} alt="" className='img3'/>
@@ -45,6 +45,7 @@ const TopPost = () => {
                 })}
         </div>
         <div className='adverrrr'><div className='Advertisement'><p>Advertisement</p></div></div>
+       
     </div></>
     
   )

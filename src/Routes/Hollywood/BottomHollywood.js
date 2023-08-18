@@ -12,7 +12,7 @@ const BottomHollywood = () => {
       <div >
       <div><Header headertext={"The Latest"}/></div>
             <div style={{display:"flex", gap:"15px", justifyContent:"center" }}>  
-               <div className='newbar'>
+               <div className='newbarer'>
                 {count.filter((item) => item.cat === 'hollywoodtop').map((d, index) => {
                     return (
                         <div className='newapp'>

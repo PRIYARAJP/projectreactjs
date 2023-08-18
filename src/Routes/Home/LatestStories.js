@@ -7,11 +7,8 @@ import Travel from '../Travel'
 const LatestStories = () => {
   let [count] = useContext(store)
   return (<>
-    <div>
-       <div>
-      <div><Header headertext={"Latest Stories"}/></div>
-      <div >
-            <div style={{display:"flex", gap:"15px", justifyContent:"center"}} className='avatarsss'>
+   <Header headertext={"Latest Stories"}/>
+            <div  style={{display:"flex", gap:"15px", justifyContent:"center" }} className='avatarsss'>
                 {count.filter((item) => item.cat === 'LateststoryHome').map((d, index) => {
                     return (<>
                         <div >
@@ -19,7 +16,7 @@ const LatestStories = () => {
               
                       
                           <h2 >{d.img}</h2>     
- <hr /><p>{d.command}</p>
+                          <hr /><p>{d.command}</p>
                        
                           <Travel/>
                           </div>
@@ -27,9 +24,7 @@ const LatestStories = () => {
                         </div></>
                     )
                 })}
-            </div>
-        </div>
-    </div>
+         
     </div></>
   )
 }
