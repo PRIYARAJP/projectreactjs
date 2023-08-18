@@ -1,15 +1,17 @@
 import React,{useContext} from 'react'
-// import { Header } from '../../Component/Common'
+import { Header } from '../../Component/Common'
 import { store } from "../../Utility/ContextStore/ContextApi"
 import { Link } from 'react-router-dom'
 import "./Bollywood.style.css"
+import Travel from '../Travel'
 
 const TopPost = () => {
   let [count] = useContext(store)
   return (
     <div>
-      <h1>Top post</h1>
-      {/* <Header headertext={"Top Post"}/> */}
+
+      
+      <Header headertext={"Top Post"}/>
       <div className='tophome'>
       {count.filter((item) => item.cat === 'BollywoodTopposthigh').map((d, index) => {
         return(<><div className='newone'>
@@ -18,8 +20,8 @@ const TopPost = () => {
         <img src={d.img} alt="" className='imgss'  height={"270px"}/>
                           {/* <img src={}, height={"270px"} alt="" /> */}
                           </Link>
-                        <p className='comm'><p>{d.command}</p></p>
-                   
+                        <p className='comm'><p>{d.command}</p><Travel/></p>
+                        
                         </div> </div></>)
       })}
           </div>
@@ -49,7 +51,7 @@ const TopPost = () => {
                           </Link>
                           </div>
                           <div>
-                             <p className='comm'><p>{d.command}</p></p>
+                             <p className='comm'><p>{d.command}</p><Travel/></p>
                           {/* <p>{d.heading}</p> */}
                           </div>
                       

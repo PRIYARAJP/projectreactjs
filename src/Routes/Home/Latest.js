@@ -9,9 +9,8 @@ const Latest = () => {
   return (<>
     <div >
     
-      <div >
       <div><Header headertext={"The Latest"}/></div>
-            <div style={{display:"flex", gap:"15px", justifyContent:"center" }}>  
+            <div style={{display:"flex", gap:"15px", justifyContent:" space-between" ,}}>  
                <div className='newbar'>
                 {count.filter((item) => item.cat === 'Hometop').map((d, index) => {
                   console.log(d.icon);
@@ -32,7 +31,7 @@ const Latest = () => {
                     )
                 })}</div>
             </div>
-        </div>
+       
     </div></>
   )
 }

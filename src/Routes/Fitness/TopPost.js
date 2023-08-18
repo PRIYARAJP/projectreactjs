@@ -3,35 +3,27 @@ import { Header } from '../../Component/Common'
 import { store } from "../../Utility/ContextStore/ContextApi"
 import { Link } from 'react-router-dom'
 import "./Fitness.style.css"
+import Travel from '../Travel'
 
 const TopPost = () => {
   let [count] = useContext(store)
   return (
     <div>
-      {/* <h1>Top post</h1> */}
       <Header headertext={"Top Post"}/>
       <div>
       <div className='tophome'>
       {count.filter((item) => item.cat === 'newtopfit').map((d, index) => {
         return(<><div className='newone'> <div>
-        <Link to={`/dynamic/${d.id}`} state={d}>
+        <Link to={`/${d.icon}/${d.id}`} state={d}>
         <img src={d.img} alt="" className='imgss'  height={"270px"}/>
                           {/* <img src={}, height={"270px"} alt="" /> */}
                           </Link>
-                        <p className='comm'><p>{d.command}</p></p>
+                        <p className='comm'><p>{d.command}</p><Travel/></p>
                    
                         </div></div> </>)
       })}
           </div>
-      {/* {count.filter((item) => item.cat === 'newtopfit').map((d, index) => {
-        return(<>
-        <Link to={`/dynamic/${d.id}`} state={d}>
-                          <img src={d.img} height={"210px"} alt="" />
-                          </Link>
-                          <h2><p className='comms'>{d.heading}</p> </h2>
-                          <p className='comms'>{d.command}</p>
-        </>)
-      })} */}
+      
       <div className='tophome'>
       {count.filter((item) => item.cat === 'newtopfit2').map((d, index) => {
         return(<><div className='newone'> <div>
@@ -39,7 +31,7 @@ const TopPost = () => {
         <img src={d.img} alt="" className='imgss'  height={"250px"}/>
                           {/* <img src={}, height={"270px"} alt="" /> */}
                           </Link>
-                        <p className='comm'><p>{d.command}</p></p>
+                        <p className='comm'><p>{d.command}</p><Travel/></p>
                    
                         </div></div> </>)
       })}
@@ -68,7 +60,7 @@ const TopPost = () => {
                       </div>
                       <div>
                      
-                      <p className='com'>{d.command}</p>
+                      <p className='com'>{d.command}</p><Travel/>
                       </div>
                   
                     </div>

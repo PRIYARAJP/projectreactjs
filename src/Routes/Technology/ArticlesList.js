@@ -5,6 +5,7 @@ import { Header } from '../../Component/Common'
 import "./Technology.style.css"
 import { store } from "../../Utility/ContextStore/ContextApi"
 import { Link } from 'react-router-dom'
+import Travel from '../Travel'
 // import { useNavigate } from 'react-router-dom'
 
 
@@ -31,7 +32,7 @@ const ArticlesList = () => {
                      
                       <p className='comm'>{d.command}</p>
                   
-                      <p>{d.heading}</p>
+                      <p>{d.heading}</p><Travel/>
                       </div>
                       
                       </div>

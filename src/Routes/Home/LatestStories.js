@@ -2,6 +2,8 @@ import React,{useContext} from 'react'
 import { store } from '../../Utility/ContextStore/ContextApi'
 import { Header } from '../../Component/Common'
 
+import Travel from '../Travel'
+
 const LatestStories = () => {
   let [count] = useContext(store)
   return (<>
@@ -19,7 +21,7 @@ const LatestStories = () => {
                           <h2 >{d.img}</h2>     
  <hr /><p>{d.command}</p>
                        
-                          
+                          <Travel/>
                           </div>
           
                         </div></>

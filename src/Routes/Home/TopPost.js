@@ -1,20 +1,22 @@
 import React,{useContext} from 'react'
-import { Header } from '../../Component/Common'
+
 import { store } from "../../Utility/ContextStore/ContextApi"
 import { Link } from 'react-router-dom'
 import "./Home.style.css"
+import Travel from '../Travel'
 
 const TopPost = () => {
   let [count] = useContext(store)
   return (<>
     <div className='newfont'>
-      {/* <h1>Top post</h1> */}
+      <h1 className='topppps'><span>Top post</span><hr className='toppppsnew'></hr> </h1>
      <div className='tophome'>
       {count.filter((item) => item.cat === 'newtophome').map((d, index) => {
-        return(<><div className='newone'> <Header headertext={"Top Post"}/>
+        return(<><div className='newone'> 
+        
         <Link to={`/${d.icon}/${d.id}`} state={d}>
         <img src={d.img} alt="" className='imgss'  height={"270px"}/>
-                          {/* <img src={}, height={"270px"} alt="" /> */}
+                          
                           </Link>
                         <p className='comm'><p>{d.command}</p></p>
                    
@@ -35,9 +37,9 @@ const TopPost = () => {
                           </div>
                           <div>
                          
-                          <p className='com'>{d.command}</p>
+                          <p className='com'>{d.command}<br/>  <br/> <Travel/></p>
                           </div>
-                      
+                   
                         </div></>
                     )
                 })}

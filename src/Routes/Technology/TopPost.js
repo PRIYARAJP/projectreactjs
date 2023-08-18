@@ -3,6 +3,7 @@ import { Header } from '../../Component/Common'
 import { store } from "../../Utility/ContextStore/ContextApi"
 import { Link } from 'react-router-dom'
 import "./Technology.style.css"
+import Travel from '../Travel'
 
 const TopPost = () => {
   let [count] = useContext(store)
@@ -18,7 +19,7 @@ const TopPost = () => {
         <img src={d.img} alt="" className='imgss'  height={"270px"}/>
                           {/* <img src={}, height={"270px"} alt="" /> */}
                           </Link>
-                        <p className='comm'><p>{d.command}</p></p>
+                        <p className='comm'><p>{d.command}</p><Travel/></p>
                    
                         </div> </>)
       })}
@@ -39,7 +40,7 @@ const TopPost = () => {
                           </div>
                           <div> <h5><p>{d.heading}</p> </h5>
                          
-                          <p className='comm'>{d.command}</p> 
+                          <p className='comm'>{d.command}</p> <Travel/>
                           </div>
                       
                         </div>

@@ -34,6 +34,9 @@ hr{
   text-decoration: underline white;
   
 }
+.updates:hover{
+  color: rgb(190, 10, 10);
+}
 i{  
   padding-right: 10px;
   display: none ;

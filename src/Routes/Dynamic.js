@@ -67,7 +67,7 @@ else {
   }
   
   return (
-    <><div className='posstr'>
+    <><div className='lefter'><div className='posstr'>
   <div className='apper'>
 <div className='apper'>
 <span className='upro'>The</span>
@@ -104,6 +104,7 @@ Get Started</p></div>
          <div className="Travelleftered">Share this article</div> 
          </div>
          </div>
+         
         <img src={loc.state.img} alt="" className='img'/>
         <p className='cent'>{loc.state.command}</p>
 
@@ -143,7 +144,7 @@ Get Started</p></div>
          <h1 onClick={handleCancel}>BACK</h1>
         
 
-        </div>
+        </div></div>
    </>
   )
 }

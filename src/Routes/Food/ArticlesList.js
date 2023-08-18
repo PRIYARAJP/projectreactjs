@@ -3,6 +3,7 @@ import { Header } from '../../Component/Common'
 import "./Food.style.css"
 import { store } from "../../Utility/ContextStore/ContextApi"
 import { Link } from 'react-router-dom'
+import Travel from '../Travel'
 
 
 
@@ -30,7 +31,7 @@ const ArticlesList = () => {
                      
                       <p className='comm'>{d.command}</p>
                   
-                      <p>{d.heading}</p>
+                      <p>{d.heading}</p><Travel/>
                       </div>
                       
                       </div>

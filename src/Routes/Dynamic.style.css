@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+   
     margin: 20px;
 }
 .Travelleftered{
@@ -20,6 +22,12 @@
     border-radius: 50%;
     margin: 20px;
 }
+.optas{
+    opacity: .5;
+    position: absolute;
+    z-index: -1;
+  
+}
 .myname{
     margin-top: 40px;
 }
@@ -36,7 +44,7 @@
     display: flex;
   }
   .homepageone{
-    width: 850px;
+    width: 750px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -89,9 +97,65 @@
 .imger{
     width: 250px;
     height: 200px;
-    margin: 10px;
+    
+}
+.Footer{
+    background-color: rgb(49, 34, 34);
+    height: 200px;
+   display: flex;
+   color: white;
+  
+
+}
+.centerer{
+    font-size: 30px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 50px;
+    text-align: center;
+}
+@media only screen and (max-width:1000px){
+    .centerer{
+        font-size: 20px;
+        font-style: italic;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 50px;
+        text-align: center;
+    }
+    .apperstricky{
+        display: none;
+      
+    }
+    
+}
+@media only screen and (max-width:770px){
+   
+    .img{
+        width: 300px;
+        height: 250px;
+    }
+    .cent{
+        width: 300px;
+    }
+    .homepageone{
+        width: 350px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      .imger{
+        width: 100px;
+        height: 100px;
+    }
 }
   @media only screen and (max-width:460px){
+    .centerer{
+        font-size: 15px;
+        font-style: italic;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 50px;
+        text-align: center;
+    }
     
     .imger{
         width: 100px;
@@ -108,6 +172,7 @@
     .booold{
         font-size: 25px;
     }
+    
     .apper{
        
         margin-left: 0px;

@@ -3,24 +3,25 @@ import { Header } from '../../Component/Common'
 import { store } from "../../Utility/ContextStore/ContextApi"
 import { Link } from 'react-router-dom'
 import "./Hollywood.style.css"
+import Travel from '../Travel'
 
 const TopPost = () => {
   let [count] = useContext(store)
   return (<>
     <div>
       {/* <h1>Top post</h1> */}
-      <div  >
-      <Header headertext={"Top Post"}/></div>
+     
+      <Header headertext={"Top Post"}/>
       <div  >
       <div >
       <div className='tophome'>
       {count.filter((item) => item.cat === 'newtophollywood').map((d, index) => {
         return(<><div className='newone'> <div>
         <Link to={`/${d.icon}/${d.id}`} state={d}>
-        <img src={d.img} alt="" className='imgss'  height={"270px"}/>
+        <img src={d.img} alt="" className='imgss'  height={"210px"}/>
                           {/* <img src={}, height={"270px"} alt="" /> */}
                           </Link>
-                        <p className='comm'><p>{d.command}</p></p>
+                        <p className='comm'><p>{d.command}</p><Travel/></p>
                    
                         </div></div> </>)
       })}
@@ -48,7 +49,7 @@ const TopPost = () => {
                           </div>
                           <div>
                           <h5><p>{d.heading}</p> </h5>
-                          <p className='comm'>{d.command}</p>
+                          <p className='comm'>{d.command}</p><Travel/>
                           </div>
                       
                         </div></>

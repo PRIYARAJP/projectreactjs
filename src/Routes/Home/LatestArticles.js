@@ -4,15 +4,16 @@ import { Header } from '../../Component/Common'
 import TopPost from './TopPost'
 import "./Home.style.css"
 import { Link } from 'react-router-dom'
+import Travel from '../Travel'
 
 const LatestArticles = () => {
   let [count] = useContext(store)
   return (<>
     <div >
-      <Header headertext={"Latest Articles"}/>
-      <div className='moger'>
+     
+      <div className='moger'> 
       {/* <Header headertext={"Latest Articles"}/> */}
-      <div >
+      <div ><Header headertext={"Latest Articles"}/>
                 {count.filter((item) => item.cat === 'latestarticles').map((d, index) => {
                     return (<>
                         <div>
@@ -28,6 +29,7 @@ const LatestArticles = () => {
                           <p className='comm'>{d.command}</p>
                       
                           <p>{d.heading}</p>
+                         <Travel/>
                           </div>
                           
                           </div>
