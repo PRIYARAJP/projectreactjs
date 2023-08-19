@@ -20,7 +20,8 @@ let Home = () =>{
             <span className="flexeeeeeeeeeeess">
             <LatestArticles/>
             <TopPost/> </span>
-            <LatestStories/>
+            <span className="flexeeeeeeeeeeess">
+            <LatestStories/></span>
         </div></>
     )
 }

@@ -6,7 +6,7 @@ const Footer = () => {
         
  <div className="homepageone">
  <div className="splits">
-     {/* <img src="https://cdn.openart.ai/uploads/image_hpHpbgvV_1680141414858_raw.jpg" alt="" className='imageanime'/> */}
+     <img src="https://cdn.openart.ai/uploads/image_hpHpbgvV_1680141414858_raw.jpg" alt="" className='imageanime'/>
        <div>
      <div className='myname'>Priyadharshini R</div>
      <div className="Travel">August 17 2023</div>

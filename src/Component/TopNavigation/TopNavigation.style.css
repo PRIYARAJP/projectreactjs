@@ -1,7 +1,7 @@
 .nav{
  
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: larger;
     text-decoration : none;  
     box-shadow: inset;

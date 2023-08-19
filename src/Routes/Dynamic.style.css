@@ -15,6 +15,7 @@
     height: 400px;
 }
 .cent{
+    font-size: 20px;
     width: 550px;
 }
 .imageanime{
@@ -32,6 +33,9 @@
 .myname{
     margin-top: 40px;
 }
+.heeeee{
+    font-size: 50px;
+}
 .instalogoes{
     opacity: .5;
     width: 120px;
@@ -39,7 +43,7 @@
     margin-top: 40px;
     background-size: cover;
     z-index: -1;
-  background-image:url('https://thumbs.dreamstime.com/z/instagram-facebook-youtube-twitter-popular-social-media-video-platform-internet-services-kyiv-ukraine-april-179628965.jpg');
+  /* background-image:url('https://thumbs.dreamstime.com/z/instagram-facebook-youtube-twitter-popular-social-media-video-platform-internet-services-kyiv-ukraine-april-179628965.jpg'); */
   }
   .splitss{
     display: flex;
@@ -79,18 +83,43 @@
     justify-content: space-between;
    
 }
+.apperen{
+    margin-left: 40px;
+    margin-top: 10px;
+    font-size: 20px;
+   display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
 .upro{
     transform: rotate(-90deg);
     margin-left: 40px;
+    
 }
 .apperstricky{
-    display: block;
+   
+display: flex;
+
+flex-direction: column;
     position: fixed;
-    left: 180px;
-    top: 200px;
+    left: 7%;
+    top: 250px;
+   
     z-index: -3;
  
 }
+.apperstrickyER {
+    /* background-color: ; */
+    display: flex;
+    flex-direction: column;
+        position: fixed;
+        left: 8%;
+        top: 310px;
+        height: 30px;
+        width: 100px;
+        /* z-index: -2;  */
+     
+    }
 .sharesimble{
    opacity: .6;
    margin-right:10px ;
@@ -101,6 +130,7 @@
     
 }
 .Footer{
+    margin-top: 10px;
     background-color: rgb(49, 34, 34);
     height: 200px;
    display: flex;
@@ -123,10 +153,31 @@
         margin: 50px;
         text-align: center;
     }
+     
     .apperstricky{
+    
         display: none;
       
-    }
+    } 
+    .apperstrickyER{
+    
+        display: none;
+      
+    } 
+    
+}
+@media only screen and (max-width:1280px){
+  
+ 
+    /* .apperstricky{
+           display: block;
+    position: relative;
+    left: 180px;
+    top: 200px;
+    z-index: -3;
+        display: none;
+      
+    }  */
     
 }
 @media only screen and (max-width:770px){
@@ -136,6 +187,7 @@
         height: 250px;
     }
     .cent{
+        font-size: 15px;
         width: 300px;
     }
     .homepageone{
@@ -148,6 +200,7 @@
         width: 100px;
         height: 100px;
     }
+   
 }
   @media only screen and (max-width:460px){
     .centerer{
@@ -163,6 +216,10 @@
         height: 100px;
     }
     .apperstricky{
+        display: none;
+      
+    }
+    .apperstrickyER{
         display: none;
       
     }
@@ -196,5 +253,7 @@
     }
     .cent{
         width: 300px;
+        font-size: 15px;
+        
     }
 }

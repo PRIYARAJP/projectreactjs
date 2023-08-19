@@ -4,12 +4,28 @@ import { Link } from 'react-router-dom'
 import  "./TopNavigation.style.css"
 
 const TopNavigation = () => {
-   
+  const [name,setname] =useState("fa fa-bars")
   const [formvalues, setformvalues] =useState({
     Contant:"",
    
   });
 const opentag=()=>{
+  const names =['fa fa-window-close-o',"fa fa-bars"]
+    
+  const int =Math.floor(Math.random())
+   
+  setname(names[int])
+
+  if (name==="fa fa-window-close-o"){
+    setformvalues(
+      {
+        Contant:"",
+       
+      }
+      
+    )
+    setname("fa fa-bars")
+  }else{
 setformvalues(
    {
     Contant :<>      <div >
@@ -29,7 +45,9 @@ setformvalues(
    }
 
 );
+  }
 }
+
 return(
 <>    
 <div className='posstr'>
@@ -39,7 +57,7 @@ return(
 <nav className='rotate'>The</nav>
 <h1>Siren<span className="i" onClick={opentag}>
 
-<i class="fa fa-bars" ></i></span></h1>
+<i class={name} ></i></span></h1>
 
 </div>
 

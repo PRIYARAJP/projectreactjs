@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Home, Bollywood, Hollywood, Technology, Fitness, Food } from '../Routes/Routes'
 import Dynamic from '../Routes/Dynamic'
+// import Share from '../Routes/Share'
 
 const AppRoutes = () => {
   return (
@@ -15,7 +16,7 @@ const AppRoutes = () => {
         <Route path='/technology' element={<Technology/>}/>
         <Route path='/fitness' element={<Fitness/>}/>
         <Route path='/food' element={<Food/>}/>
-        {/* <Route path="/Home/:productId" element={<Dynamic/>}/> */}
+        {/* <Route path="/:producticon/:productId:share" element={<Share/>}/> */}
         <Route path="/:producticon/:productId" element={<Dynamic/>}/>
         {/* <Route path="/home-img/:productId" element={<Dynamic/>}/>
         <Route path="/home-img/:productId" element={<Dynamic/>}/> */}

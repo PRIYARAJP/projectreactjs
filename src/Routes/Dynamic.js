@@ -1,5 +1,5 @@
 import React from 'react'
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import "./Dynamic.style.css"
 import { useNavigate } from 'react-router-dom'
 import Latest from './Home/Latest'
@@ -68,12 +68,15 @@ else {
   
   return (
     <><div className='lefter'><div className='posstr'>
-  <div className='apper'>
+  <div className='apper'> <Link to ='/projectreactjs'>
+    <div>
 <div className='apper'>
+  
 <span className='upro'>The</span>
 <b className='booold'>Siren</b>
 </div>
-
+</div>
+</Link>
 <div className="getstartbor" 
 onClick={handleCancel}
 ><p className='getstart'>
@@ -90,23 +93,45 @@ Get Started</p></div>
      <div className='myname'>Priyadharshini R</div>
      <div className="Travel">August 17 2023</div>
      </div>
-     </div>  <div className="instalogoes"></div>
+     </div> 
+     <div >
+     <Link to={`https://www.instagram.com/`} target="_blank" >   
+     <b className='fa fa-instagram'  style={{fontSize:"36px" ,margin:"10px", color:"black"}} ></b>   
+       </Link>
+       <Link to={`https://github.com/PRIYARAJP`} target="_blank" >   
+     <b className='fa fa-github'  style={{fontSize:"36px"  ,margin:"10px",color:"black"}} ></b>   
+       </Link>
+       <Link to={`https://www.facebook.com/`} target="_blank" >   
+     <b className='fa fa-facebook-square'  style={{fontSize:"36px" ,color:"black" ,margin:"10px"}} ></b>   
+       </Link>
+       <Link to={`https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D`} target="_blank" >   
+     <b className='fa fa-twitter-square'  style={{fontSize:"36px" ,color:"black" ,margin:"10px"}} ></b>   
+       </Link>
+   </div>
+   
+
 </div>
+ <Link to={`https://priyarajp.github.io/projectreactjs/`} target="_blank" >   
+ <div className="apperstrickyER"></div></Link>
 <div className="apperstricky">
-<div className="apper">
+<div className="apperen">
         <div className=" handclaper"></div>
-         <div className="Travelleftered">9.3K </div> 
+         <span className="Travelleftered" >9.3K </span> 
          </div>
-         <div className="apper">
+       
+          <div className="apper">
         <div className=" sharesimble">
-          <img src="https://friconix.com/jpg/fi-xwluxx-share-wide.jpg" alt="" width={25}/>
+
+         <img src="https://friconix.com/jpg/fi-xwluxx-share-wide.jpg" alt="" width={25}/>
         </div>
-         <div className="Travelleftered">Share this article</div> 
-         </div>
-         </div>
-         
+         <div className="Travelleftered">Share</div> 
+</div>
+       
+</div>
+
+
         <img src={loc.state.img} alt="" className='img'/>
-        <p className='cent'>{loc.state.command}</p>
+        <p className='cent'>{loc.state.command} {loc.state.extrecom}</p>
 
                <div className='homepageone'>
    
