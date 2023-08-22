@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/projectreactjs/static/css/main.16ea21c3.css",
-    "main.js": "/projectreactjs/static/js/main.89416df8.js",
+    "main.css": "/projectreactjs/static/css/main.85e1ac13.css",
+    "main.js": "/projectreactjs/static/js/main.8c2f2f35.js",
     "static/js/787.3c4690bf.chunk.js": "/projectreactjs/static/js/787.3c4690bf.chunk.js",
     "static/media/Screenshot 2020-08-10 at 4.28.04 PM@2x.png": "/projectreactjs/static/media/Screenshot 2020-08-10 at 4.28.04 PM@2x.3012ee73b62099793836.png",
     "static/media/Mask Group 21@2x.png": "/projectreactjs/static/media/Mask Group 21@2x.6a3f2e3a3f4dd042636d.png",
     "index.html": "/projectreactjs/index.html",
-    "main.16ea21c3.css.map": "/projectreactjs/static/css/main.16ea21c3.css.map",
-    "main.89416df8.js.map": "/projectreactjs/static/js/main.89416df8.js.map",
+    "main.85e1ac13.css.map": "/projectreactjs/static/css/main.85e1ac13.css.map",
+    "main.8c2f2f35.js.map": "/projectreactjs/static/js/main.8c2f2f35.js.map",
     "787.3c4690bf.chunk.js.map": "/projectreactjs/static/js/787.3c4690bf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.16ea21c3.css",
-    "static/js/main.89416df8.js"
+    "static/css/main.85e1ac13.css",
+    "static/js/main.8c2f2f35.js"
   ]
 }
