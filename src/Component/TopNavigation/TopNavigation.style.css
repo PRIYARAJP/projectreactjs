@@ -8,10 +8,10 @@
     
 }
 .toppppshead{
-    margin-top: 50px;
-   
+    margin-top: 100px;
+    /* text-decoration: line-through; */
     text-shadow: 2px 2px 4px #1e07ed;
-    margin-left: 10px;
+    margin-left: 0px;
     border-bottom: 2px rgb(200, 23, 4) solid;
     width: fit-content ;
 }

@@ -5,6 +5,7 @@ import ArticlesList from "./ArticlesList"
 // import ArticlesListt from "./Articals";
 import "./Technology.style.css"
 import { TopNavigation } from "../../Component/Common"
+import { Link } from "react-router-dom"
 
 
 let Technology = () =>{
@@ -19,7 +20,10 @@ let Technology = () =>{
             {/* <Latest/> */}
             </span> 
       
-      
+            <Link to={`/fitness`} className="uper">
+            <p >View more <i className='	fa fa-arrow-right' style={{color:"red"}}></i></p>
+   
+                      </Link>
        </div></>
     )
 }

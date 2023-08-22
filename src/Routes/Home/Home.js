@@ -8,6 +8,7 @@ import { TopNavigation } from "../../Component/Common"
 import TopPost from "./TopPost"
 
 import Latesthome from "./Latesthome"
+import { Link } from "react-router-dom"
 
 
 let Home = () =>{
@@ -16,22 +17,26 @@ let Home = () =>{
     return(<>
         <div >
             <TopNavigation/>
-            <div className="flexeeeeeeeeeee">
+            <span className="flexeeeeeeeeeee">
             <Banner/>
-            </div>
+            </span>
             {/* <Latest/>  */}
             <span className="flexeeeeeeeeeeess">
                 
                
             <Latesthome/></span>
-            {/* <div className="flexeeeeeeeeeeess"> */}
-            <div className="flexeeeeeeeeeee">
+            <span className="flexeeeeeeeeeeess">
+            {/* <span className="flexeeeeeeeeeee"> */}
             <LatestArticles/>
             <TopPost/> 
-            </div>
+            </span>
             
             <span className="flexeeeeeeeeeeess">
             <LatestStories/></span>
+            <Link to={`/bollywood`} className="uper">
+            <p >View more <i className='	fa fa-arrow-right' style={{color:"red"}}></i></p>
+   
+                      </Link>
         </div></>
     )
 }

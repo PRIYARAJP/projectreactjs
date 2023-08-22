@@ -16,6 +16,9 @@ const Dynamic = () => {
   const handleCancel=()=>{
     navi(-1);
   }
+  const handlemove=()=>{
+    navi(-1);
+  }
   const locatelocat=()=>{
   
   if( loc.state.id<=18){
@@ -173,7 +176,8 @@ Get Started</p></div>
          <h1 onClick={handleCancel}>BACK</h1>
         
 
-        </div></div></span>
+        </div></div></span><p onClick={handlemove}>View more <i className='	fa fa-arrow-right' style={{color:"red"}}></i></p>
+   
    </>
   )
 }
