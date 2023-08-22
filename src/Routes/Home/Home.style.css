@@ -830,6 +830,10 @@ flex-direction: column;
       width: 690px;
   }
     @media only screen and (max-width:1060px){
+      .HEEEE{
+        margin-left: 10px;
+    
+      }
       .imginger{
             
       height: 451px;
