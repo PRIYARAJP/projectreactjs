@@ -3,9 +3,9 @@ import { Header } from '../../Component/Common'
 import { store } from '../../Utility/ContextStore/ContextApi'
 import { Link } from 'react-router-dom'
 import "./Home.style.css"
-import Headart from '../Headart'
+import Travel from '../Travel'
 
-const Latest = () => {
+const Latesthome = () => {
   let [count] = useContext(store)
   return (<>
     <div >
@@ -13,29 +13,38 @@ const Latest = () => {
       <div><Header headertext={"The Latest"}/></div>
             <div style={{display:"flex", gap:"15px", justifyContent:" space-between" ,}}>  
                <div className='newbarer'>
-                {count.filter((item) => item.cat === 'Hometop').map((d, index) => {
+                {count.filter((item) => item.cat === 'the latest').map((d, index) => {
                   console.log(d.icon);
                     return (<>
-                      <div className='newapp'>
-                      <div className='mog'>
-                      {/* <p className='com'>{d.command}</p>  */}
+                      <div className=''>
+                      <div style={{margin:"20px"}}>
+                  
                       
                       <Link to={`/${d.icon}/${d.id}`} state={d}>
-                      <img src={d.img} alt="" className='imger'/>
+                      <img src={d.img} alt="" className='img5'/>
                       </Link>
                     </div>
                     <div>
-                   
-                    <p className='comer'>{d.command}</p>
+                        <h2 className='comm'>
+                        {d.heading}
+                        </h2>
+                  
+                    <p className='comm'>{d.command}</p>
+                    <p><Travel/></p>
                       </div>
-                      <Headart/>
-                    </div></>
+                
+                    </div>
+             
+                    </>
                     )
                 })}</div>
             </div>
        
-    </div></>
+    </div>
+    
+    
+    </>
   )
 }
 
-export default Latest
+export default Latesthome

@@ -2,6 +2,7 @@ import React,{useContext} from 'react'
 import { Header } from '../../Component/Common'
 import { store } from '../../Utility/ContextStore/ContextApi'
 import { Link } from 'react-router-dom'
+import Headart from '../Headart'
 
 
 const BottomHollywood = () => {
@@ -26,6 +27,7 @@ const BottomHollywood = () => {
                          
                           <p className='comer'>{d.command}</p>
                             </div>
+                            <Headart/>
                           </div>
                     )
                 })}</div>

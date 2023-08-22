@@ -1,7 +1,10 @@
 .banner{  
-  margin-top: 100px;
+  margin-top: 50px;
     display: flex;  
     justify-content: center; 
+    align-items: center;
+    text-align: center;
+   
     padding: 50px;
     gap: 20px;
 }
@@ -13,8 +16,9 @@
 }
 .topppps{
     /* margin: 10px; */
-    height: 80px;
+    /* height: 80px; */
     text-shadow: 2px 2px 4px #1e07ed;
+    margin-left: 10px;
 }
 .toppppsnew{
     border: 1px solid rgb(226, 28, 28) ;
@@ -24,8 +28,8 @@
    z-index: -1;
    text-shadow: 10px 10px 10px #1e07ed;
 }
-.one{
-    
+.oneeeee{
+
     height: 451px;
     width: 690px;
     border: 2px solid black;
@@ -34,7 +38,8 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.a{
+
+.aaaaaaaaaaaaaa{
     margin-bottom: 20px;
     height: 214px;
     width: 281px;
@@ -44,7 +49,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.b{
+.bbbbbbbbbbbbb{
     
     height: 214px;
     width: 281px;
@@ -67,23 +72,45 @@
 }
 
 .com{
+  margin-left: 10px;
+  text-align: left;
     width: 250px; 
 }
 .comm{
+  margin-left: 10px;
+  text-align: left;
     width: 300px; 
 }
 .comms{
+  margin-left: 10px;
+  text-align: left;
+    width: 400px; 
+}
+.commser{
+  margin-left: 0px;
+  text-align: left;
+    width: 300px; 
+}
+.numbers{
+  font-size: 60px;
+  color: #d7d7d9;
+}
+.commsnum{
+  margin-left: 0px;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
     width: 400px; 
 }
 .img4{
     width: 311px;
     height: 221px;
 }
-
 .img5{
-    width: 250px;
-    height: 200px;
+  width: 250px;
+  height: 200px;
 }
+
 .mog{
     margin: 20px;
 }
@@ -99,27 +126,60 @@
 .newbarer{
   display: flex;
   flex-wrap: wrap;
-  margin-left: 40px;
+  margin-left: -80px;
   justify-content: space-around;
+}
+.mogering{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ 
+  justify-content: center;
+  gap: 15px;
+  margin: 20px;
 }
 @media only screen and (max-width:725px){
   
+  .mogering{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+    justify-content: center;
+    gap: 0px;
+    margin: 0px;
+  }
+  .moger{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0px;
+    margin: 20px;
+}
   .newbarer{
   display: flex;
   flex-wrap: wrap;
-  margin-left: 0px;
+  margin-left: 40px;
   justify-content: space-around;
 }
 .banner{  
   margin-top: 0px;
     display: flex;  
     justify-content: center; 
-    padding: 50px;
-    gap: 20px;
+    padding: 0px;
+    gap: 0px;
 }
+
     .one{
-    display: none;
-    }
+      margin-bottom: 20px;
+      height: 214px;
+      width: 281px;
+      border: 2px solid black;
+        background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+    
     .newone{
       margin: 100px;
       height: 500px;
@@ -132,6 +192,17 @@
 }
 
 @media only screen and (max-width:460px){
+  .comer{
+    width: 0px;
+  }
+ 
+  .i
+  .imginger{
+    
+    height: 4011px;
+    width: 690px;
+}
+
     .topppps{
         margin: 50px;
         height: 80px;
@@ -139,13 +210,14 @@
     }
     .one{
     
-        height: 0px;
-        width: 0;
-        border: 0px solid black;
-        background-image:none;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+      margin-bottom: 20px;
+      height: 214px;
+      width: 281px;
+      border: 2px solid black;
+       background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  
     } 
     .hh{
         margin-top: 0px;
@@ -182,7 +254,7 @@
     
 }
 .com{
-    width: 150px; 
+    width: 170px; 
 }
 .comm{
     width: 250px; 
@@ -221,15 +293,7 @@
 .vewww{
     justify-content: center;
 }
-.moger{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-   
-    justify-content: center;
-    gap: 15px;
-    margin: 20px;
-}
+
 
 
 .bollywood{
@@ -257,6 +321,15 @@
     width: 150px;
     height: 120px;
 }
+.imgeeeee{
+  width: 452px;
+    height: 260px;
+}
+.lefter{
+display: flex;
+justify-content: left;
+flex-direction: column;
+}
 .Advertisement{
     border: 3px black solid;
     height: 500px;
@@ -266,11 +339,33 @@
     align-items: center;
     justify-content: center;
 }
+.Advertisement2{
+  border: 3px black solid;
+  height: 600px;
+  width: 300px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
 .adverrrr{
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+.adverrrring{
+ 
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: left;
+}
+.adverrrrer{
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  justify-content: left;
 }
 @media only screen and (max-width:460px){
   .topholly{
@@ -278,6 +373,11 @@
   }
 .Top{
     display: none;
+}
+.imginger{
+    
+  height: 300px;
+  width: 690px;
 }
 }
 
@@ -355,6 +455,9 @@
     hr{
       color: rgb(125, 115, 115);
     }
+    img{
+      border-radius: 5px;
+    }
     .updates{
       color: black;
       font-size: 25px;
@@ -413,6 +516,9 @@
       color: rgb(111, 107, 107);
       font-size: 15px;
       width: 200px;
+    }
+    .two{
+      margin-top: 0px;
     }
     .twostimg{
       padding: 10px;
@@ -483,7 +589,7 @@
     background: transparent url('https://images.pexels.com/photos/16000582/pexels-photo-16000582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') 0% 0% no-repeat padding-box;
     }
     .flexeeeeeeeeeee{
-      margin-top: 100px;
+      /* margin-top: 100px; */
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -496,12 +602,46 @@
     }
     
     @media only screen and (max-width:1000px){
+      .aaaaaaaaaaaaaa{
+        display: none;
+      }
+      .bbbbbbbbbbbbb{
+          display: none;
+      }
+      .commsnum{
+        width: 300px; 
+        margin-left: 30px;
+        display: flex;
+        justify-content: space-around;
+      }
+      .adverrrring{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+     .centring{
+      display: block;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+     }
+      .imgeeeee{
+        width: 350px;
+          height: 260px;
+      }
       .flexeeeeeeeeeee{
         display: block;
+        text-align: center;
+        /* display: flex; */
+        justify-content: center;
         /* margin-top: 0px; */
       }
       .flexeeeeeeeeeeess{
         display: block;
+        
         margin-top: 0px;
       }
       .one{
@@ -588,15 +728,7 @@
       align-items: center;
     
     }
-    .moger{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-     
-      justify-content: center;
-      gap: 15px;
-      margin: 20px;
-  }
+
     .techfirstbox{
       text-align: left;
       width: 677px;
@@ -675,14 +807,110 @@
       flex-direction: column;
      
     }
+    .imginger{
+    
+      height: 451px;
+      width: 690px;
+  }
     @media only screen and (max-width:1000px){
+      .imginger{
+            
+      height: 451px;
+      width: 600px;
+    
+    }
       .newapp{
         display: flex;
         flex-direction: row-reverse;
       }
     }
-    
     @media only screen and (max-width:700px){
+      .imginger{
+        width: 400px;
+        height: 300px;
+    }
+      .oneeeeess{
+
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+        background-image: url("https://images.pexels.com/photos/1233414/pexels-photo-1233414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+    @media only screen and (max-width:318px){
+      .com{
+        width: 100px;
+      }
+      .comer{
+        width: 150px;
+      }
+      .imgeeeee{
+        width: 250px;
+          height: 260px;
+      }
+      .imginger{
+         
+        width: 250px;
+        height: 200px;
+    } 
+      .Advertisement{
+        border: 3px black solid;
+        height: 500px;
+        width: 200px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+      .mogering{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+       
+        justify-content: center;
+        gap: 15px;
+        margin: 20px;
+      }
+.com{
+  width: 150px;
+}
+    }
+    @media only screen and (max-width:460px){
+      .comer{
+        width: 150px;
+        margin-left: 0px;
+      }
+    }
+        @media only screen and (max-width:700px){
+      .homebanner{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+      }
+      .oneeeee{
+
+     display: none;
+      }
+      .oneeeeess{
+
+        height: 250px;
+        width: 350px;
+        border: 2px solid black;
+        background-image: url("https://images.pexels.com/photos/1233414/pexels-photo-1233414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .aaaaaaaaaaaaaa{
+        display: none;
+      }
+      .bbbbbbbbbbbbb{
+          display: none;
+      }
       .canceling{
         background-image:url("https://tse4.mm.bing.net/th/id/OIP.5hnWvxkq_jqrjpgLQ49stAHaHa?pid=ImgDet&rs=1");
       
@@ -691,9 +919,7 @@
         display: block;
         margin-top: 50px;
       }
-      .comer{
-        width: 220px;
-      }
+      
       
       .newapp{
         display: flex;
@@ -885,5 +1111,6 @@
         }
         .homepg{  
           height: 1000cm;
-        }    
+        }   
+
     }

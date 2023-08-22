@@ -67,8 +67,12 @@ else {
   }
   
   return (
-    <><div className='lefter'><div className='posstr'>
-  <div className='apper'> <Link to ='/projectreactjs'>
+    <>
+         {/* <div className="flexeeeeeeeeeee"> */}
+         <span className="flexeeeeeeeeeeess">
+    <div >
+      <div className='posstr'>
+  <div className='apper'>
     <div>
 <div className='apper'>
   
@@ -76,7 +80,7 @@ else {
 <b className='booold'>Siren</b>
 </div>
 </div>
-</Link>
+
 <div className="getstartbor" 
 onClick={handleCancel}
 ><p className='getstart'>
@@ -128,7 +132,7 @@ Get Started</p></div>
 </div>
        
 </div>
-
+<div className="homepageone">
 
         <img src={loc.state.img} alt="" className='img'/>
         <p className='cent'>{loc.state.command} {loc.state.extrecom}</p>
@@ -138,7 +142,7 @@ Get Started</p></div>
                <div className="RJArja">React</div>
         <div className="RJArja">JavaScript</div>
         <div className="RJArja">Animation</div>
-        </div>
+        </div></div>
      <div className='homepageone'>
      <div className="apper">
         <div className="handclap"></div>
@@ -169,7 +173,7 @@ Get Started</p></div>
          <h1 onClick={handleCancel}>BACK</h1>
         
 
-        </div></div>
+        </div></div></span>
    </>
   )
 }

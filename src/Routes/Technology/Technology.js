@@ -12,11 +12,12 @@ let Technology = () =>{
     return(<>
        <div>
         <TopNavigation/>
-         <div className="flexeeeeeeeeeee">
+         {/* <div className="flexeeeeeeeeeee"> */}
+         <span className="flexeeeeeeeeeeess">
         <ArticlesList/>
             <TopPost/>
             {/* <Latest/> */}
-            </div> 
+            </span> 
       
       
        </div></>

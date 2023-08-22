@@ -2,6 +2,7 @@ import React,{useContext} from 'react'
 import { Header } from '../../Component/Common'
 import { store } from '../../Utility/ContextStore/ContextApi'
 import { Link } from 'react-router-dom'
+import Headart from '../Headart'
 
 const BottomBollywood = () => {
     let [count] = useContext(store)
@@ -12,7 +13,7 @@ const BottomBollywood = () => {
         <div><Header headertext={"The Latest"}/></div>
               <div style={{display:"flex", gap:"15px", justifyContent:"center" }}>  
                  <div className='newbarer'>
-                  {count.filter((item) => item.cat === 'bollywoodbott').map((d, index) => {
+                  {count.filter((item) => item.cat === 'bollywoodtop').map((d, index) => {
                       return (
                         <div className='newapp'>
                         <div className='mog'>
@@ -24,7 +25,7 @@ const BottomBollywood = () => {
                       <div>
                      
                       <p className='comer'>{d.command}</p>
-                        </div>
+                        </div><Headart/>
                       </div>
                       )
                   })}</div>

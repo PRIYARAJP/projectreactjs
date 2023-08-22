@@ -9,32 +9,34 @@ import Travel from '../Travel'
 const LatestArticles = () => {
   let [count] = useContext(store)
   return (<>
-   
-     
+   <div>
+   <div><Header headertext={"Latest Articles"}/></div>
       <div className='moger'> 
       {/* <Header headertext={"Latest Articles"}/> */}
-      <div ><Header headertext={"Latest Articles"}/>
+      <div > 
                 {count.filter((item) => item.cat === 'latestarticles').map((d, index) => {
                     return (<>
                         <div>
-                          <div className='moger'>
+                          <div className='mogering'>
                           
                           <div>
                           <Link to={`/${d.icon}/${d.id}`} state={d}>
-                            <img src={d.img} alt="" className='img5'/>
+                            <img src={d.img} alt="" className='imger'/>
                             </Link>
                             </div>
                           <div>
-                         
-                          <p className='comm'>{d.command}</p>
+                            <div>
+                          
+                          <p className='com'><b>{d.heading}</b></p></div>
+                          <p className='com'>{d.command}</p>
                       
-                          <p>{d.heading}</p>
-                         <Travel/>
+                          <p className='com'> <Travel/></p>
+                         {/* <Travel/> */}
                           </div>
                           
                           </div>
 
-                        </div></>
+                        </div>    <hr/></>
                     )
                 })}
                 {count.filter((item) => item.cat === 'latestarticlesimg').map((d, index) => {
@@ -54,7 +56,7 @@ const LatestArticles = () => {
             <span>
             {/* */}
             </span>
-   
+            </div>
     </div></>
   )
 }

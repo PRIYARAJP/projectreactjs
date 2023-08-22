@@ -2,6 +2,7 @@ import React,{useContext} from 'react'
 import { Header } from '../../Component/Common'
 import { store } from '../../Utility/ContextStore/ContextApi'
 import { Link } from 'react-router-dom'
+import Headart from '../Headart'
 
 const BottomFood = () => {
     let [count] = useContext(store)
@@ -24,7 +25,7 @@ const BottomFood = () => {
                       <div>
                      
                       <p className='comer'>{d.command}</p>
-                        </div>
+                        </div><Headart/>
                       </div>
                       )
                   })}</div>

@@ -2,6 +2,7 @@ import React,{useContext} from 'react'
 import { Header } from '../../Component/Common'
 import { store } from '../../Utility/ContextStore/ContextApi'
 import { Link } from 'react-router-dom'
+import Headart from '../Headart'
 
 const BottomTechnology = () => {
     let [count] = useContext(store)
@@ -22,9 +23,14 @@ const BottomTechnology = () => {
                             </Link>
                           </div>
                           <div>
-                         
-                          <p className='comer'>{d.command}</p>
-                            </div>
+                          <p className='comer'><b>{d.heading}</b><br/>
+                          {d.command}
+                          </p>
+                        
+                          {/* <p className='comer'>{d.command}</p> */}
+                            
+                            
+                              </div><Headart/>
                           </div>
                       )
                   })}</div>

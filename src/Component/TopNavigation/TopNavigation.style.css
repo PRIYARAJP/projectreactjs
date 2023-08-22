@@ -7,6 +7,14 @@
     box-shadow: inset;
     
 }
+.toppppshead{
+    margin-top: 50px;
+   
+    text-shadow: 2px 2px 4px #1e07ed;
+    margin-left: 10px;
+    border-bottom: 2px rgb(200, 23, 4) solid;
+    width: fit-content ;
+}
 .posstr{
   box-sizing: border-box;
    background-color:white;
