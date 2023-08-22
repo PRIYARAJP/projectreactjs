@@ -21,7 +21,7 @@ let Technology = () =>{
             </span> 
       
             <Link to={`/fitness`} className="uper">
-            <p >View more <i className='	fa fa-arrow-right' style={{color:"red"}}></i></p>
+            <p >View more <i className='fa fa-arrow-right' style={{color:"red"}}></i></p>
    
                       </Link>
        </div></>

@@ -1,5 +1,5 @@
 .banner{  
-  margin-top: 50px;
+  margin-top: 100px;
     display: flex;  
     justify-content: center; 
     align-items: center;
@@ -37,20 +37,23 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 10px;
+   
 }
 
 .aaaaaaaaaaaaaa{
     margin-bottom: 20px;
     height: 214px;
     width: 281px;
-    border: 2px solid black;
+    border: 0px solid black;
+    border-radius: 10px;
     background-image: url("https://th.bing.com/th?id=OIP.P1xzFzeXR3-Vy7rQJoEOPAHaLE&w=204&h=305&c=8&rs=1&qlt=90&o=6&dpr=1.6&pid=3.1&rm=2");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .bbbbbbbbbbbbb{
-    
+  border-radius: 10px;
     height: 214px;
     width: 281px;
     border: 2px solid black;
@@ -375,6 +378,9 @@ flex-direction: column;
   justify-content: left;
 }
 @media only screen and (max-width:460px){
+  .uper{
+   display: none;
+  }
   .HEEEE{
     margin-left: 10px;
 
@@ -612,7 +618,7 @@ flex-direction: column;
       justify-content: center;
     }
     
-    @media only screen and (max-width:1000px){
+    @media only screen and (max-width:1060px){
       .aaaaaaaaaaaaaa{
         display: none;
       }
@@ -823,7 +829,7 @@ flex-direction: column;
       height: 451px;
       width: 690px;
   }
-    @media only screen and (max-width:1000px){
+    @media only screen and (max-width:1060px){
       .imginger{
             
       height: 451px;
